@@ -1,0 +1,139 @@
+{
+  "_comment": "Optional per-model metadata. Keys are .glb file names without extension. 'scale' is the default scale applied so the model has a realistic size in meters; 'description' tells the agent what the model is. Models without an entry still show up (scale 1, name as description).",
+  "building-small-a": {
+    "scale": 2.2,
+    "description": "red brick two-storey townhouse, flat roof, door on front"
+  },
+  "building-small-b": {
+    "scale": 2.2,
+    "description": "green three-storey apartment building with roof antenna"
+  },
+  "building-small-c": {
+    "scale": 2.2,
+    "description": "purple four-storey apartment block (tallest building)"
+  },
+  "building-small-d": {
+    "scale": 2.2,
+    "description": "grey corner shop with green awning over the front"
+  },
+  "building-garage": {
+    "scale": 2.2,
+    "description": "grey single-storey garage with an orange door"
+  },
+  "grass-trees": {
+    "scale": 2.5,
+    "description": "square grass tile with a cluster of small pine trees (mini forest)"
+  },
+  "grass-trees-tall": {
+    "scale": 2.5,
+    "description": "square grass tile with a cluster of taller pine trees (mini forest)"
+  },
+  "pavement-fountain": {
+    "scale": 2.5,
+    "description": "square grey paved plaza tile with a fountain in the middle"
+  },
+  "platform": {
+    "scale": 1,
+    "description": "dark stone platform slab with yellow trim, jumpable"
+  },
+  "platform-medium": {
+    "scale": 1,
+    "description": "medium dark stone platform slab with yellow trim, jumpable"
+  },
+  "platform-large": {
+    "scale": 1,
+    "description": "large dark stone platform slab with yellow trim, jumpable"
+  },
+  "brick": {
+    "scale": 1,
+    "description": "brick cube block, stackable, jumpable"
+  },
+  "block-coin": {
+    "scale": 1,
+    "description": "question-mark coin block (platformer style)"
+  },
+  "coin": {
+    "scale": 1,
+    "description": "gold coin collectible, looks best floating ~1m above ground"
+  },
+  "flag": {
+    "scale": 1.5,
+    "description": "purple flag on a pole (goal flag)"
+  },
+  "wall-high": {
+    "scale": 1.2,
+    "description": "tall red brick wall segment with stone cap"
+  },
+  "wall-low": {
+    "scale": 1,
+    "description": "low red brick wall segment, can be jumped over"
+  },
+  "grass-small": {
+    "scale": 1.5,
+    "description": "small grass tuft, decoration"
+  },
+  "vehicle-truck-red": {
+    "scale": 1,
+    "description": "red truck"
+  },
+  "vehicle-motorcycle": {
+    "scale": 0.9,
+    "description": "motorcycle"
+  },
+  "banner": {
+    "scale": 2,
+    "description": "standing purple banner on a pole"
+  },
+  "block": {
+    "scale": 1,
+    "description": "low sandstone block/step, can be stepped on"
+  },
+  "bricks": {
+    "scale": 1,
+    "description": "small pile of loose bricks, rubble"
+  },
+  "column": {
+    "scale": 1.8,
+    "description": "sandstone column/pillar"
+  },
+  "column-damaged": {
+    "scale": 1.8,
+    "description": "broken sandstone column, ruin"
+  },
+  "floor-detail": {
+    "scale": 2,
+    "description": "decorated stone floor tile, flat"
+  },
+  "stairs": {
+    "scale": 2,
+    "description": "sandstone staircase; at rotation 0 you walk up it heading north (the steps face south)"
+  },
+  "statue": {
+    "scale": 1.5,
+    "description": "stone knight statue on a sandstone pedestal"
+  },
+  "tree": {
+    "scale": 1.8,
+    "description": "tall pine tree"
+  },
+  "trophy": {
+    "scale": 1,
+    "description": "golden trophy"
+  },
+  "wall": {
+    "scale": 2,
+    "description": "grey stone castle wall segment"
+  },
+  "wall-corner": {
+    "scale": 2,
+    "description": "grey stone castle wall corner piece (L-shaped)"
+  },
+  "wall-gate": {
+    "scale": 2,
+    "description": "grey stone castle wall with an arched wooden gate"
+  },
+  "weapon-rack": {
+    "scale": 2,
+    "description": "weapon rack with swords and spears"
+  }
+}

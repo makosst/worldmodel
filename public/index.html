@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Maker</title>
+<link rel="stylesheet" href="/style.css">
+<script type="importmap">{ "imports": { "three": "/vendor/three/build/three.module.js", "three/addons/": "/vendor/three/examples/jsm/" } }</script>
+</head>
+<body class="idle">
+<canvas id="view"></canvas>
+<button id="home" type="button">← Worlds</button>
+<div id="hint"></div>
+<div id="gallery"></div>
+<div id="crosshair"></div>
+<div id="dock">
+  <div id="status"></div>
+  <form id="prompt">
+    <input id="input" autocomplete="off" placeholder="Describe a world…" autofocus>
+    <button id="send" type="submit" aria-label="Send">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </form>
+</div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

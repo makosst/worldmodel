@@ -1,0 +1,7 @@
+node_modules/
+data/
+.venv/
+__pycache__/
+.env
+bench/renders/
+bench/results/

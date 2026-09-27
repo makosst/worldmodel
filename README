@@ -1,0 +1,31 @@
+World Maker
+
+Type a prompt and get a small 3D world you can walk around in.
+
+Features
+Each world is a 10 x 10 meter floating island.
+An agent places 3D models from your library in a single shot.
+You walk in first person with WASD and jump with Space.
+Every world is saved with its prompt, agent model, generation time, object count and a screenshot from the player's start view.
+The home screen shows a gallery of past worlds. Click one to walk into it.
+
+How to open it
+You need Node 22, Claude Code installed and logged in, and an OpenAI API key.
+Run npm install, then npx playwright install chromium.
+Create a .env file with OPENAI_API_KEY and WORLD_LIBRARY_DIR (the folder with your 3D models).
+Run npm run build-library once to index the models. Run it again after adding models.
+Run npm start and open http://127.0.0.1:5173.
+
+How it works
+The server picks the library models closest to your prompt using OpenAI embeddings.
+It launches the local claude CLI with those models and one MCP tool, build_world.
+The agent calls build_world once with the ground, sky, spawn point and every object.
+The server checks the layout, nudges objects back inside the island, drops ones that do not fit, and moves the spawn if something blocks it.
+The browser gets the objects over server-sent events and renders them with three.js.
+A headless Chromium renders the player's start view for the gallery thumbnail.
+Worlds are saved in data/worlds.
+
+Options
+WORLD_AGENT_MODEL sets the agent model. The default is sonnet.
+A model named river:<model> runs through River instead of Claude Code. It needs RIVER_API_KEY and a Python venv with river/requirements.txt.
+node bench/run.mjs runs the same prompts through several models for comparison.
