@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-workshop-at-midday-welding-sparks-n-425d5807",
+ "geo": 1.0000000000000002,
+ "geometry": {
+  "score": 1.0000000000000002,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.48,
+  "small": 34,
+  "stacked": 34,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "no welding cart/bolt cutters visible, flat green ground not workshop floor, objects scattered without walls/walkways"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.52,
+ "ms": 42465
+}

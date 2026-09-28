@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cluttered-small-office-metal-desk-piled--51437382",
+ "geo": 0.9416666666666669,
+ "geometry": {
+  "score": 0.9416666666666669,
+  "n": 58,
+  "overlaps": 0,
+  "coverage": 0.35,
+  "small": 45,
+  "stacked": 44,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7777777777777777,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.75
+ },
+ "problems": 0,
+ "n": 58,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "scattered isolated desks with huge gaps, no walls/cluttered piles, chalkboard floating alone away from desk"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5204166666666667,
+ "ms": 8182
+}

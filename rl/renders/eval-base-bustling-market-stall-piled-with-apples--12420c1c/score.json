@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-bustling-market-stall-piled-with-apples--12420c1c",
+ "geo": 0.8815151515151516,
+ "geometry": {
+  "score": 0.8815151515151516,
+  "n": 72,
+  "overlaps": 0,
+  "coverage": 0.34,
+  "small": 47,
+  "stacked": 36,
+  "unique": 29,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.18181818181818182
+ },
+ "problems": 0,
+ "n": 72,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "scattered props with no stall structure, giant unrelated white blobs, empty field"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.4003787878787879,
+ "ms": 15049
+}

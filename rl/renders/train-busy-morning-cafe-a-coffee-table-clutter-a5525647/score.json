@@ -1,0 +1,33 @@
+{
+ "id": "train-busy-morning-cafe-a-coffee-table-clutter-a5525647",
+ "geo": 0.9674149659863946,
+ "geometry": {
+  "score": 0.9674149659863946,
+  "n": 98,
+  "overlaps": 0,
+  "coverage": 0.42,
+  "small": 80,
+  "stacked": 77,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9333333333333332,
+  "c_stacking": 1,
+  "c_variety": 0.7482993197278912,
+  "c_orientation": 0.9
+ },
+ "problems": 0,
+ "n": 98,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "open grassy field with scattered furniture, no walls/tea sets/crowd, huge empty gaps"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.48185374149659865,
+ "ms": 18107
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-night-lab-glowing-under-a-desk-lamp-a-ma-bf27854c",
+ "geo": 0.9833333333333335,
+ "geometry": {
+  "score": 0.9833333333333335,
+  "n": 70,
+  "overlaps": 0,
+  "coverage": 0.52,
+  "small": 37,
+  "stacked": 30,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8333333333333334
+ },
+ "problems": 0,
+ "n": 70,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "no glowing lamp/magnifying glass, objects randomly scattered with no bench grouping"
+ },
+ "judgeScore": 0.22,
+ "reward": 0.4108333333333334,
+ "ms": 10804
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-shed-morning-gardener-grabbing-a-wa-35a4828f",
+ "geo": 0.9593103448275864,
+ "geometry": {
+  "score": 0.9593103448275864,
+  "n": 76,
+  "overlaps": 0,
+  "coverage": 0.39,
+  "small": 49,
+  "stacked": 38,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8666666666666667,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7931034482758621
+ },
+ "problems": 1,
+ "n": 76,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no shed structure, low-poly scattered clip-art props on flat lawn instead of an enclosed garden shed"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4798275862068966,
+ "ms": 36853
+}

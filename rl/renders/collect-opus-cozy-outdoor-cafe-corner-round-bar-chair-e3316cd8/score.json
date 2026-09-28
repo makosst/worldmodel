@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-outdoor-cafe-corner-round-bar-chair-e3316cd8",
+ "geo": 0.8787723785166242,
+ "geometry": {
+  "score": 0.8787723785166242,
+  "n": 51,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 23,
+  "stacked": 5,
+  "unique": 17,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.43478260869565216,
+  "c_variety": 1,
+  "c_orientation": 0.35294117647058826
+ },
+ "problems": 1,
+ "n": 51,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 8,
+  "orientation": 2,
+  "note": "chairs/tables floating on dark platform blocks, no coffee cart visible, cluttered scatter not grouped seating"
+ },
+ "judgeScore": 0.44,
+ "reward": 0.549693094629156,
+ "ms": 21445
+}

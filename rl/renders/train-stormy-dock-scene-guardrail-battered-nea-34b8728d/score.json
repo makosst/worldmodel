@@ -1,0 +1,33 @@
+{
+ "id": "train-stormy-dock-scene-guardrail-battered-nea-34b8728d",
+ "geo": 0.8938947368421053,
+ "geometry": {
+  "score": 0.8938947368421053,
+  "n": 50,
+  "overlaps": 8,
+  "coverage": 0.79,
+  "small": 10,
+  "stacked": 10,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.6799999999999999,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5789473684210527
+ },
+ "problems": 0,
+ "n": 50,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 6,
+  "orientation": 3,
+  "note": "giant floating buoys and random cannons/barrels, no dock/boardwalk, scale broken"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4634736842105263,
+ "ms": 21191
+}

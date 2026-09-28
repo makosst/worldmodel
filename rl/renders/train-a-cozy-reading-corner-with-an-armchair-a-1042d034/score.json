@@ -1,0 +1,33 @@
+{
+ "id": "train-a-cozy-reading-corner-with-an-armchair-a-1042d034",
+ "geo": 0.9791666666666667,
+ "geometry": {
+  "score": 0.9791666666666667,
+  "n": 60,
+  "overlaps": 0,
+  "coverage": 0.5,
+  "small": 23,
+  "stacked": 18,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7916666666666666
+ },
+ "problems": 0,
+ "n": 60,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 2,
+  "density": 6,
+  "orientation": 3,
+  "note": "multiplied furniture scattered across whole island, not one cozy corner"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5447916666666668,
+ "ms": 15682
+}

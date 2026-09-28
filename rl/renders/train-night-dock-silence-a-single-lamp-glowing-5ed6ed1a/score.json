@@ -1,0 +1,33 @@
+{
+ "id": "train-night-dock-silence-a-single-lamp-glowing-5ed6ed1a",
+ "geo": 0.9371212121212121,
+ "geometry": {
+  "score": 0.9371212121212121,
+  "n": 55,
+  "overlaps": 0,
+  "coverage": 0.72,
+  "small": 17,
+  "stacked": 14,
+  "unique": 15,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 0.9090909090909091,
+  "c_orientation": 0.4166666666666667
+ },
+ "problems": 0,
+ "n": 55,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 4,
+  "density": 6,
+  "orientation": 5,
+  "note": "no water/dock; multiple buoy-like towers instead of one dock lamp"
+ },
+ "judgeScore": 0.44,
+ "reward": 0.5642803030303031,
+ "ms": 29812
+}

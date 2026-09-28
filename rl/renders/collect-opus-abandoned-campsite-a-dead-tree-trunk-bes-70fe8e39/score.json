@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-campsite-a-dead-tree-trunk-bes-70fe8e39",
+ "geo": 0.9584210526315791,
+ "geometry": {
+  "score": 0.9584210526315791,
+  "n": 51,
+  "overlaps": 0,
+  "coverage": 0.69,
+  "small": 20,
+  "stacked": 9,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.9,
+  "c_variety": 1,
+  "c_orientation": 0.6842105263157895
+ },
+ "problems": 0,
+ "n": 51,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 5,
+  "note": "barrel and trunk not grouped as a campsite; bare flat dirt with odd black wall panels breaks realism"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5546052631578948,
+ "ms": 22893
+}

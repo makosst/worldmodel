@@ -1,0 +1,33 @@
+{
+ "id": "train-overgrown-abandoned-garden-nettles-creep-9675f80d",
+ "geo": 0.9191167290886393,
+ "geometry": {
+  "score": 0.9191167290886393,
+  "n": 89,
+  "overlaps": 1,
+  "coverage": 0.51,
+  "small": 72,
+  "stacked": 13,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9775280898876404,
+  "c_coverage": 1,
+  "c_stacking": 0.3611111111111111,
+  "c_variety": 1,
+  "c_orientation": 0.875
+ },
+ "problems": 0,
+ "n": 89,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 2,
+  "density": 3,
+  "orientation": 4,
+  "note": "no nettles/overgrowth, just a mowed lawn with scattered pots and no wild vegetation"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4547791822721598,
+ "ms": 24778
+}

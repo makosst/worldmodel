@@ -1,0 +1,33 @@
+{
+ "id": "collect-base-festive-workshop-decorated-for-a-holiday-95ad280f",
+ "geo": 0.9438228438228439,
+ "geometry": {
+  "score": 0.9438228438228439,
+  "n": 66,
+  "overlaps": 8,
+  "coverage": 0.54,
+  "small": 38,
+  "stacked": 23,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.7575757575757576,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9230769230769231
+ },
+ "problems": 0,
+ "n": 66,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "scene rendered pitch-dark with lanterns floating unconnected, no festive garland/lights visible, sparse scattered props"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.460955710955711,
+ "ms": 17597
+}

@@ -1,0 +1,33 @@
+{
+ "id": "smoke-a-cozy-reading-corner-with-an-armchair-a-6c36282f",
+ "geo": 0.5433333333333333,
+ "geometry": {
+  "score": 0.5433333333333333,
+  "n": 6,
+  "overlaps": 0,
+  "coverage": 0.1,
+  "small": 0,
+  "stacked": 0,
+  "unique": 6,
+  "c_density": 0.12,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.22222222222222224,
+  "c_stacking": 0.3,
+  "c_variety": 1,
+  "c_orientation": 0.5
+ },
+ "problems": 0,
+ "n": 6,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 2,
+  "orientation": 2,
+  "note": "objects scattered in a single sparse line on bare ground, no lamp, no walls/room, no grouping"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.3308333333333333,
+ "ms": 8372
+}

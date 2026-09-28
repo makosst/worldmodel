@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-storage-yard-rusting-quietly-o-1634292a",
+ "geo": 0.9437106918238996,
+ "geometry": {
+  "score": 0.9437106918238996,
+  "n": 86,
+  "overlaps": 0,
+  "coverage": 0.52,
+  "small": 53,
+  "stacked": 16,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.6037735849056604,
+  "c_variety": 1,
+  "c_orientation": 0.8333333333333334
+ },
+ "problems": 1,
+ "n": 86,
+ "judge": {
+  "prompt": 7,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "crates float/clip with no burial in weeds, scattered not grouped, walls look like fences not structures"
+ },
+ "judgeScore": 0.44,
+ "reward": 0.5659276729559749,
+ "ms": 31821
+}

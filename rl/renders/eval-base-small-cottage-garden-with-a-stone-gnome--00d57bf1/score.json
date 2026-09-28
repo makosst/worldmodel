@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-small-cottage-garden-with-a-stone-gnome--00d57bf1",
+ "geo": 0.9489682539682541,
+ "geometry": {
+  "score": 0.9489682539682541,
+  "n": 84,
+  "overlaps": 0,
+  "coverage": 0.37,
+  "small": 65,
+  "stacked": 26,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8222222222222222,
+  "c_stacking": 0.8,
+  "c_variety": 0.9126984126984128,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 84,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 5,
+  "note": "no cottage/blooms visible, scattered pots on bare grass, odd dark panel fence"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.5072420634920636,
+ "ms": 16595
+}

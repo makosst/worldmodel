@@ -5,3 +5,4 @@ __pycache__/
 .env
 bench/renders/
 bench/results/
+logs/

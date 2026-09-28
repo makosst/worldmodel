@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import { chromium } from 'playwright';
+const o = JSON.parse(fs.readFileSync('data/library/orient.json', 'utf8'));
+const ids = JSON.parse(process.argv[2]);
+const out = process.argv[3];
+const safe = (id) => id.replace(/[^\w.-]+/g, '_');
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 1440, height: 1000 } });
+const cells = ids.map((id) => `<div style="width:360px"><img src="data:image/jpeg;base64,${fs.readFileSync(`data/library/orient-tiles/${safe(id)}.jpg`).toString('base64')}" style="width:360px;height:300px"><div style="font:12px sans-serif;height:32px">${id.replace('polyhaven/', '')} → <b>${o[id]?.front}</b></div></div>`).join('');
+await p.setContent(`<body style="margin:0;display:flex;flex-wrap:wrap;background:#fff">${cells}</body>`);
+fs.writeFileSync(out, await p.screenshot({ fullPage: true, type: 'jpeg', quality: 70 }));
+await b.close();

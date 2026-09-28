@@ -1,0 +1,33 @@
+{
+ "id": "train-cluttered-small-lab-a-bunsen-burner-besi-dc37b743",
+ "geo": 0.9248717948717949,
+ "geometry": {
+  "score": 0.9248717948717949,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.34,
+  "small": 46,
+  "stacked": 38,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6153846153846154
+ },
+ "problems": 0,
+ "n": 63,
+ "judge": {
+  "prompt": 1,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "looks like a warehouse yard with crates/barrels/fences, no bunsen burner/beakers/chemistry set visible"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4412179487179487,
+ "ms": 11529
+}

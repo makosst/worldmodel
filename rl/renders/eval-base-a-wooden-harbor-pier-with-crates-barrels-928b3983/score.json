@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-wooden-harbor-pier-with-crates-barrels-928b3983",
+ "geo": 0.951851851851852,
+ "geometry": {
+  "score": 0.951851851851852,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.75,
+  "small": 16,
+  "stacked": 11,
+  "unique": 29,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5185185185185185
+ },
+ "problems": 0,
+ "n": 59,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 5,
+  "orientation": 3,
+  "note": "no pier/dock or water, giant oversized buoy, no boat, random scatter with stray cannons"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.46296296296296297,
+ "ms": 11890
+}

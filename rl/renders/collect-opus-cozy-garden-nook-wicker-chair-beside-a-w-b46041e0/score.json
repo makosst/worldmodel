@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-garden-nook-wicker-chair-beside-a-w-b46041e0",
+ "geo": 0.9352352352352354,
+ "geometry": {
+  "score": 0.9352352352352354,
+  "n": 62,
+  "overlaps": 0,
+  "coverage": 0.47,
+  "small": 37,
+  "stacked": 12,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.6486486486486487,
+  "c_variety": 1,
+  "c_orientation": 0.7037037037037037
+ },
+ "problems": 1,
+ "n": 62,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "no wicker chair/watering can/periwinkle; random chairs scattered, chain-link fence not garden wall"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.4138088088088089,
+ "ms": 15601
+}

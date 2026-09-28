@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-back-alley-with-trash-bins-a-fire-esca-e730a5ac",
+ "geo": 0.962909090909091,
+ "geometry": {
+  "score": 0.962909090909091,
+  "n": 57,
+  "overlaps": 0,
+  "coverage": 0.73,
+  "small": 11,
+  "stacked": 5,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.9090909090909091,
+  "c_variety": 1,
+  "c_orientation": 0.72
+ },
+ "problems": 0,
+ "n": 57,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 4,
+  "note": "open plaza not a narrow alley; fire escape floats disconnected from any wall, debris scattered randomly"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5407272727272728,
+ "ms": 27398
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-forest-camp-dry-branches-stacked-n-6cba4615",
+ "geo": 0.872594524119948,
+ "geometry": {
+  "score": 0.872594524119948,
+  "n": 59,
+  "overlaps": 2,
+  "coverage": 0.79,
+  "small": 30,
+  "stacked": 6,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9322033898305084,
+  "c_coverage": 1,
+  "c_stacking": 0.4,
+  "c_variety": 1,
+  "c_orientation": 0.46153846153846156
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 4,
+  "density": 6,
+  "orientation": 4,
+  "note": "no fog or forest canopy at all — bright bare lawn with only 2 tiny pines, fire pit looks like a grey crater not stones"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.533148631029987,
+ "ms": 23793
+}

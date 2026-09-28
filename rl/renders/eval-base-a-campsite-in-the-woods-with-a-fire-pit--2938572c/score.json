@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-campsite-in-the-woods-with-a-fire-pit--2938572c",
+ "geo": 0.8583577712609972,
+ "geometry": {
+  "score": 0.8583577712609972,
+  "n": 60,
+  "overlaps": 0,
+  "coverage": 0.71,
+  "small": 31,
+  "stacked": 2,
+  "unique": 38,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.12903225806451613,
+  "c_variety": 1,
+  "c_orientation": 0.45454545454545453
+ },
+ "problems": 0,
+ "n": 60,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "no trees despite 'woods', random scatter with no clear fire-pit gathering area"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.4845894428152493,
+ "ms": 17202
+}

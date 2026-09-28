@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cozy-kitchen-corner-brass-pots-simmering-91fcb0f5",
+ "geo": 0.9475757575757577,
+ "geometry": {
+  "score": 0.9475757575757577,
+  "n": 60,
+  "overlaps": 0,
+  "coverage": 0.32,
+  "small": 41,
+  "stacked": 37,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7111111111111111,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9090909090909091
+ },
+ "problems": 0,
+ "n": 60,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "untextured scattered clutter across whole island, not a cozy corner"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4618939393939394,
+ "ms": 16653
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-night-dock-silence-a-single-lamp-glowing-0301f779",
+ "geo": 0.9642857142857144,
+ "geometry": {
+  "score": 0.9642857142857144,
+  "n": 53,
+  "overlaps": 0,
+  "coverage": 0.71,
+  "small": 14,
+  "stacked": 12,
+  "unique": 25,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6428571428571429
+ },
+ "problems": 0,
+ "n": 53,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 4,
+  "density": 6,
+  "orientation": 3,
+  "note": "pallets replaced by log piles, giant oversized buoys dominate instead of dock/lamp scene"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5260714285714286,
+ "ms": 10085
+}

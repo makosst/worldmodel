@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-quiet-closed-cafe-at-night-chairs-stacke-492f1534",
+ "geo": 0.9375000000000002,
+ "geometry": {
+  "score": 0.9375000000000002,
+  "n": 53,
+  "overlaps": 0,
+  "coverage": 0.5,
+  "small": 12,
+  "stacked": 3,
+  "unique": 25,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.5,
+  "c_variety": 1,
+  "c_orientation": 0.875
+ },
+ "problems": 1,
+ "n": 53,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 6,
+  "orientation": 3,
+  "note": "scattered mismatched furniture, no coffee cart/kiosk structure, chairs not stacked, flat green ground not night/patio setting"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.504375,
+ "ms": 29356
+}

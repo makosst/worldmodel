@@ -1,0 +1,33 @@
+{
+ "id": "train-bustling-market-stall-piled-with-apples--0d8f73d9",
+ "geo": 0.9022091310751106,
+ "geometry": {
+  "score": 0.9022091310751106,
+  "n": 97,
+  "overlaps": 0,
+  "coverage": 0.35,
+  "small": 72,
+  "stacked": 62,
+  "unique": 29,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7777777777777777,
+  "c_stacking": 1,
+  "c_variety": 0.9965635738831615,
+  "c_orientation": 0.35714285714285715
+ },
+ "problems": 0,
+ "n": 97,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "objects scattered loosely on bare ground, no stall structure or piled produce, huge empty gaps"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.43555228276877767,
+ "ms": 8222
+}

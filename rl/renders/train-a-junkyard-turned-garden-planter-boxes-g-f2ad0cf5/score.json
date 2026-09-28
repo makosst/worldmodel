@@ -1,0 +1,33 @@
+{
+ "id": "train-a-junkyard-turned-garden-planter-boxes-g-f2ad0cf5",
+ "geo": 0.9534090909090911,
+ "geometry": {
+  "score": 0.9534090909090911,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.53,
+  "small": 22,
+  "stacked": 10,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.9090909090909091,
+  "c_variety": 1,
+  "c_orientation": 0.625
+ },
+ "problems": 0,
+ "n": 61,
+ "judge": {
+  "prompt": 7,
+  "realism": 6,
+  "composition": 5,
+  "density": 4,
+  "orientation": 6,
+  "note": "large empty dirt areas, too sparse for junkyard clutter"
+ },
+ "judgeScore": 0.56,
+ "reward": 0.6583522727272728,
+ "ms": 15870
+}

@@ -1,0 +1,1 @@
+river://91b453df-7c40-4d4d-ab33-46f89f675d1b/sampler_weights/lowpoly-v3

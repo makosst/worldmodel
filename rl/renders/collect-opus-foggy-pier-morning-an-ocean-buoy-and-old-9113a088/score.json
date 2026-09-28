@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-pier-morning-an-ocean-buoy-and-old-9113a088",
+ "geo": 0.9484126984126985,
+ "geometry": {
+  "score": 0.9484126984126985,
+  "n": 56,
+  "overlaps": 1,
+  "coverage": 0.71,
+  "small": 24,
+  "stacked": 13,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9642857142857143,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5555555555555556
+ },
+ "problems": 1,
+ "n": 56,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "no pier/water/fog at all, giant buoy dwarfs crate, flat green ground with random junk scatter"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.5071031746031747,
+ "ms": 37035
+}

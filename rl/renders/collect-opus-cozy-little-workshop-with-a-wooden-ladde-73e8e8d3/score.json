@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-little-workshop-with-a-wooden-ladde-73e8e8d3",
+ "geo": 0.9603703703703705,
+ "geometry": {
+  "score": 0.9603703703703705,
+  "n": 64,
+  "overlaps": 0,
+  "coverage": 0.42,
+  "small": 30,
+  "stacked": 25,
+  "unique": 36,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9333333333333332,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7037037037037037
+ },
+ "problems": 1,
+ "n": 64,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 4,
+  "note": "no shed/walls, just scattered props on open grass with oversized tank"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5550925925925927,
+ "ms": 46287
+}

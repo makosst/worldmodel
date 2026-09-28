@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cozy-picnic-spot-a-wicker-basket-and-woo-bfe98609",
+ "geo": 0.936842105263158,
+ "geometry": {
+  "score": 0.936842105263158,
+  "n": 67,
+  "overlaps": 0,
+  "coverage": 0.59,
+  "small": 43,
+  "stacked": 36,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.3684210526315789
+ },
+ "problems": 0,
+ "n": 67,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 6,
+  "orientation": 2,
+  "note": "scattered oversized/misplaced objects (giant sacks, dark panels) instead of a coherent picnic blanket layout"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4742105263157895,
+ "ms": 8671
+}

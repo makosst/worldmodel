@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-market-day-tarp-covered-baskets-an-46976ad1",
+ "geo": 0.9695652173913045,
+ "geometry": {
+  "score": 0.9695652173913045,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.45,
+  "small": 36,
+  "stacked": 23,
+  "unique": 20,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6956521739130435
+ },
+ "problems": 1,
+ "n": 61,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 3,
+  "orientation": 2,
+  "note": "no tarps, baskets scattered not on stands, no rain/wet look, sparse layout resembles industrial yard not market"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.43739130434782614,
+ "ms": 7980
+}

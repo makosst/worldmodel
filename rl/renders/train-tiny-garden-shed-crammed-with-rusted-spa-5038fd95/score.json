@@ -1,0 +1,33 @@
+{
+ "id": "train-tiny-garden-shed-crammed-with-rusted-spa-5038fd95",
+ "geo": 0.9214285714285715,
+ "geometry": {
+  "score": 0.9214285714285715,
+  "n": 77,
+  "overlaps": 9,
+  "coverage": 0.51,
+  "small": 44,
+  "stacked": 23,
+  "unique": 38,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.7662337662337663,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6818181818181818
+ },
+ "problems": 0,
+ "n": 77,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 2,
+  "density": 2,
+  "orientation": 3,
+  "note": "no enclosed shed, tools scattered sparsely across open 10x10 yard instead of crammed inside a tiny structure"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4253571428571429,
+ "ms": 21616
+}

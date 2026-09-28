@@ -1,0 +1,33 @@
+{
+ "id": "train-small-construction-site-cement-bags-stac-838d7406",
+ "geo": 0.8287878787878789,
+ "geometry": {
+  "score": 0.8287878787878789,
+  "n": 55,
+  "overlaps": 6,
+  "coverage": 0.79,
+  "small": 0,
+  "stacked": 0,
+  "unique": 14,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.7818181818181819,
+  "c_coverage": 1,
+  "c_stacking": 0.3,
+  "c_variety": 0.8484848484848484,
+  "c_orientation": 0.5
+ },
+ "problems": 0,
+ "n": 55,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 5,
+  "density": 5,
+  "orientation": 5,
+  "note": "ladder is oddly oversized and floating, crates have unrealistic dark voids, no dirt/site texture"
+ },
+ "judgeScore": 0.5,
+ "reward": 0.5821969696969698,
+ "ms": 18917
+}

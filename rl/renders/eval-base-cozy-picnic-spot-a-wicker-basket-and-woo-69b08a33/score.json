@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cozy-picnic-spot-a-wicker-basket-and-woo-69b08a33",
+ "geo": 0.9470664928292047,
+ "geometry": {
+  "score": 0.9470664928292047,
+  "n": 59,
+  "overlaps": 1,
+  "coverage": 0.66,
+  "small": 27,
+  "stacked": 14,
+  "unique": 20,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9661016949152542,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5384615384615384
+ },
+ "problems": 0,
+ "n": 59,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "cluttered indoor-style furniture (sofas, barrels) instead of a basket/bowls on a blanket in grass"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.5067666232073011,
+ "ms": 16741
+}

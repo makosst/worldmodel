@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-market-day-tarp-covered-baskets-an-aa466532",
+ "geo": 0.9489749798224375,
+ "geometry": {
+  "score": 0.9489749798224375,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.36,
+  "small": 35,
+  "stacked": 28,
+  "unique": 17,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7999999999999999,
+  "c_stacking": 1,
+  "c_variety": 0.96045197740113,
+  "c_orientation": 0.8095238095238095
+ },
+ "problems": 0,
+ "n": 59,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 4,
+  "note": "tarps are floating fence panels, not covering baskets; no rain/puddles; half the plot empty"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4922437449556094,
+ "ms": 33992
+}

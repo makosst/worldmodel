@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-shed-doorway-open-wicker-baskets-a-ecb92ad2",
+ "geo": 0.9751851851851854,
+ "geometry": {
+  "score": 0.9751851851851854,
+  "n": 66,
+  "overlaps": 0,
+  "coverage": 0.42,
+  "small": 42,
+  "stacked": 30,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9333333333333332,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8518518518518519
+ },
+ "problems": 1,
+ "n": 66,
+ "judge": {
+  "prompt": 3,
+  "realism": 4,
+  "composition": 3,
+  "density": 5,
+  "orientation": 4,
+  "note": "picnic table/chairs dominate; no clear open shed doorway with baskets/compost piled outside"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5287962962962964,
+ "ms": 14269
+}

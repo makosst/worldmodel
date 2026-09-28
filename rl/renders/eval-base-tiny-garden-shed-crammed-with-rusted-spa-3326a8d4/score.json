@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-tiny-garden-shed-crammed-with-rusted-spa-3326a8d4",
+ "geo": 0.9796330991412959,
+ "geometry": {
+  "score": 0.9796330991412959,
+  "n": 61,
+  "overlaps": 1,
+  "coverage": 0.43,
+  "small": 37,
+  "stacked": 22,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9672131147540983,
+  "c_coverage": 0.9555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9285714285714286
+ },
+ "problems": 0,
+ "n": 61,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 4,
+  "note": "open 10m field with wire-mesh walls, not an enclosed crammed tiny shed"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.48490827478532395,
+ "ms": 15051
+}

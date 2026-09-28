@@ -1,0 +1,33 @@
+{
+ "id": "train-cozy-garden-nook-wicker-chair-beside-a-w-8fcda7ba",
+ "geo": 0.890897435897436,
+ "geometry": {
+  "score": 0.890897435897436,
+  "n": 55,
+  "overlaps": 0,
+  "coverage": 0.32,
+  "small": 40,
+  "stacked": 13,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7111111111111111,
+  "c_stacking": 0.65,
+  "c_variety": 1,
+  "c_orientation": 0.6923076923076923
+ },
+ "problems": 0,
+ "n": 55,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 3,
+  "note": "mismatched furniture (office chair, plastic chair) scattered thinly across whole plot, no clear watering can or periwinkle, mostly bare ground"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.432724358974359,
+ "ms": 17902
+}

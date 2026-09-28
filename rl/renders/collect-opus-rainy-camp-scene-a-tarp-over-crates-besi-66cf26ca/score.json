@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-camp-scene-a-tarp-over-crates-besi-66cf26ca",
+ "geo": 0.9680000000000002,
+ "geometry": {
+  "score": 0.9680000000000002,
+  "n": 58,
+  "overlaps": 0,
+  "coverage": 0.59,
+  "small": 28,
+  "stacked": 14,
+  "unique": 36,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.68
+ },
+ "problems": 1,
+ "n": 58,
+ "judge": {
+  "prompt": 3,
+  "realism": 4,
+  "composition": 3,
+  "density": 6,
+  "orientation": 4,
+  "note": "no tarp over crates and no visible fire pit; scattered layout"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.542,
+ "ms": 21848
+}

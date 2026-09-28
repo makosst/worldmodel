@@ -1,0 +1,33 @@
+{
+ "id": "train-a-museum-hall-with-statues-on-pedestals--2f45c7e9",
+ "geo": 0.9422857142857144,
+ "geometry": {
+  "score": 0.9422857142857144,
+  "n": 70,
+  "overlaps": 1,
+  "coverage": 0.63,
+  "small": 24,
+  "stacked": 20,
+  "unique": 44,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9714285714285714,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.48
+ },
+ "problems": 0,
+ "n": 70,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "no pedestals under statues, no hall walls/ceiling, items float/scattered along perimeter"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4905714285714286,
+ "ms": 16680
+}

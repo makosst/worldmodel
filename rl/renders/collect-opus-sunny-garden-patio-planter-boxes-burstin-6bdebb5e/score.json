@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-garden-patio-planter-boxes-burstin-6bdebb5e",
+ "geo": 0.9148015478164733,
+ "geometry": {
+  "score": 0.9148015478164733,
+  "n": 67,
+  "overlaps": 7,
+  "coverage": 0.52,
+  "small": 25,
+  "stacked": 8,
+  "unique": 26,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.791044776119403,
+  "c_coverage": 1,
+  "c_stacking": 0.64,
+  "c_variety": 1,
+  "c_orientation": 0.9259259259259259
+ },
+ "problems": 1,
+ "n": 67,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 4,
+  "density": 4,
+  "orientation": 4,
+  "note": "no patio surface, empty planters, floating fence, sofa dumped on grass"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5137003869541183,
+ "ms": 29743
+}

@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-museum-hall-with-statues-on-pedestals--a9e33655",
+ "geo": 0.943846153846154,
+ "geometry": {
+  "score": 0.943846153846154,
+  "n": 65,
+  "overlaps": 1,
+  "coverage": 0.46,
+  "small": 23,
+  "stacked": 23,
+  "unique": 43,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9692307692307692,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5
+ },
+ "problems": 0,
+ "n": 65,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 2,
+  "note": "no walls/hall structure, objects scattered randomly on open ground with no display cases or aisles"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4459615384615385,
+ "ms": 13348
+}

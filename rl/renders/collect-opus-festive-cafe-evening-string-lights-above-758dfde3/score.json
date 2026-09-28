@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-festive-cafe-evening-string-lights-above-758dfde3",
+ "geo": 0.9736842105263159,
+ "geometry": {
+  "score": 0.9736842105263159,
+  "n": 84,
+  "overlaps": 0,
+  "coverage": 0.7,
+  "small": 48,
+  "stacked": 31,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7368421052631579
+ },
+ "problems": 1,
+ "n": 84,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 2,
+  "note": "lights hover mid-air unattached to poles/structure, chairs scattered not facing tables, bare green ground with no walls/floor context"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.528421052631579,
+ "ms": 24454
+}

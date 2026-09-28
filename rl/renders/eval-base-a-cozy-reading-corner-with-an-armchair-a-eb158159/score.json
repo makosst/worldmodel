@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-cozy-reading-corner-with-an-armchair-a-eb158159",
+ "geo": 0.9800000000000002,
+ "geometry": {
+  "score": 0.9800000000000002,
+  "n": 62,
+  "overlaps": 0,
+  "coverage": 0.6,
+  "small": 18,
+  "stacked": 15,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8
+ },
+ "problems": 0,
+ "n": 62,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 9,
+  "orientation": 3,
+  "note": "cluttered scatter of many armchairs/shelves/lamps with no clear single reading nook, textures untextured/dark and floating lamp posts"
+ },
+ "judgeScore": 0.48,
+ "reward": 0.605,
+ "ms": 11317
+}

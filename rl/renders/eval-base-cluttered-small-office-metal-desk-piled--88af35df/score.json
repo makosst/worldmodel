@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cluttered-small-office-metal-desk-piled--88af35df",
+ "geo": 0.9500000000000001,
+ "geometry": {
+  "score": 0.9500000000000001,
+  "n": 52,
+  "overlaps": 0,
+  "coverage": 0.3,
+  "small": 38,
+  "stacked": 36,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6666666666666666,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 52,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 3,
+  "note": "open empty plane with no walls/room, sparse scattered furniture, empty shelves, barely any clutter or notepads"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4475,
+ "ms": 23801
+}

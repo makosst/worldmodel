@@ -1,0 +1,33 @@
+{
+ "id": "train-busy-market-alley-crowded-with-crates-ba-18ba6fd4",
+ "geo": 0.9213377679231338,
+ "geometry": {
+  "score": 0.9213377679231338,
+  "n": 66,
+  "overlaps": 1,
+  "coverage": 0.42,
+  "small": 34,
+  "stacked": 18,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 0.8048780487804879,
+  "c_overlap": 0.9696969696969697,
+  "c_coverage": 0.9333333333333332,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6666666666666666
+ },
+ "problems": 16,
+ "n": 66,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "open scattered field, no alley/walkway or stall structure"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.48533444198078346,
+ "ms": 14350
+}

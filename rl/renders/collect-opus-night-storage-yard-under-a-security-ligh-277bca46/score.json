@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-night-storage-yard-under-a-security-ligh-277bca46",
+ "geo": 0.9760000000000002,
+ "geometry": {
+  "score": 0.9760000000000002,
+  "n": 54,
+  "overlaps": 0,
+  "coverage": 0.45,
+  "small": 15,
+  "stacked": 14,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.76
+ },
+ "problems": 1,
+ "n": 54,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 3,
+  "orientation": 2,
+  "note": "bright daytime sky, no night lighting; storage items are boulders not crates/pallets"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.43900000000000006,
+ "ms": 18090
+}

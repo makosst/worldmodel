@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-alley-reflecting-light-off-wet-pav-695c2ead",
+ "geo": 0.9613247863247865,
+ "geometry": {
+  "score": 0.9613247863247865,
+  "n": 74,
+  "overlaps": 0,
+  "coverage": 0.53,
+  "small": 39,
+  "stacked": 19,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.9743589743589743,
+  "c_variety": 1,
+  "c_orientation": 0.6388888888888888
+ },
+ "problems": 1,
+ "n": 74,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "green grass ground instead of wet pavement, no alley corridor or rain/reflection"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4653311965811966,
+ "ms": 28976
+}

@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-small-construction-site-cement-bags-stac-4f1b4c0b",
+ "geo": 0.9077380952380953,
+ "geometry": {
+  "score": 0.9077380952380953,
+  "n": 56,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 0,
+  "stacked": 0,
+  "unique": 11,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.3,
+  "c_variety": 0.6547619047619048,
+  "c_orientation": 0.95
+ },
+ "problems": 0,
+ "n": 56,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 4,
+  "density": 6,
+  "orientation": 4,
+  "note": "ladders scattered mid-yard not leaning on structures; odd trough-like crates, flat sterile enclosure"
+ },
+ "judgeScore": 0.48,
+ "reward": 0.5869345238095238,
+ "ms": 13168
+}

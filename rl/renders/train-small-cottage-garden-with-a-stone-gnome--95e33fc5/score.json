@@ -1,0 +1,33 @@
+{
+ "id": "train-small-cottage-garden-with-a-stone-gnome--95e33fc5",
+ "geo": 0.9067257112184649,
+ "geometry": {
+  "score": 0.9067257112184649,
+  "n": 92,
+  "overlaps": 0,
+  "coverage": 0.43,
+  "small": 81,
+  "stacked": 11,
+  "unique": 20,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9555555555555555,
+  "c_stacking": 0.2716049382716049,
+  "c_variety": 0.7246376811594203,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 92,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 2,
+  "orientation": 3,
+  "note": "no cottage/house or path, mostly bare grass with scattered generic crates/tables instead of garden beds"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4366814278046163,
+ "ms": 10138
+}

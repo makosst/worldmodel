@@ -1,5 +1,6 @@
-// The build_world tool definition, shared by the MCP server (Claude Code agents)
-// and the River agent runner, so every model sees exactly the same tool.
+// World-building tools, shared by the MCP server (Claude Code agents) and the River
+// agent runner, so every model sees exactly the same tools. Each tool maps to an
+// /internal/<session>/<action> endpoint on the main server.
 import { z } from 'zod';
 
 const objectSchema = z.object({
@@ -11,41 +12,84 @@ const objectSchema = z.object({
   face_z: z.number().optional(),
   scale: z.number().optional().describe('Multiplier on the catalog size (default 1)'),
   y: z.number().optional().describe('Height of the object bottom above ground in meters (default 0)'),
-  on_top_of: z.number().int().optional().describe('0-based index of an EARLIER object in this list to stand on'),
+  on_top_of: z.number().int().optional().describe('Stand on an EARLIER object in this same call: its 0-based index in this objects list'),
+  on_top_of_id: z.string().optional().describe('Stand on an object placed in an earlier call: its id (e.g. "12")'),
 });
 
-export const BUILD_WORLD = {
-  name: 'build_world',
-  description:
-    'Build the entire world in one call. Can only be called once; objects cannot be moved or removed afterwards. ' +
-    'Write the fields in this order: environment, spawn, objects (largest/structural objects first).',
-  inputSchema: {
-    environment: z.object({
-      ground: z.enum(['grass', 'meadow', 'sand', 'snow', 'stone', 'dirt', 'lava']),
-      sky: z.enum(['day', 'sunset', 'night', 'overcast']),
-      fog: z.number().optional().describe('0 (none) .. 1 (thick)'),
-    }),
-    spawn: z.object({
+const environmentSchema = z.object({
+  ground: z.string().optional().describe('Ground texture id from the offered ground list (plain colors grass/meadow/sand/snow/stone/dirt/lava also work)'),
+  sky: z.string().optional().describe('Sky id from the offered sky list; it also sets the ambient light (plain day/sunset/night/overcast also work)'),
+  weather: z.enum(['clear', 'rain', 'snow', 'fog', 'dust']).optional().describe('Weather effect (default clear)'),
+  shading: z.enum(['bright', 'soft', 'golden', 'moody', 'night']).optional()
+    .describe('Lighting mood: bright = midday sun, soft = diffuse, golden = warm low sun, moody = dim and contrasty, night = dark with cool light'),
+  fog: z.number().optional().describe('0 (none) .. 1 (thick)'),
+});
+
+const spawnSchema = z.object({
+  x: z.number(),
+  z: z.number(),
+  look_at_x: z.number().optional().describe('Point the player looks at (default 5)'),
+  look_at_z: z.number().optional(),
+});
+
+export const TOOLS = [
+  {
+    name: 'place_objects',
+    action: 'place',
+    description:
+      'Add objects to the world (can be called many times). Optionally set environment and spawn too. ' +
+      'Stack with on_top_of (index within this call) or on_top_of_id (id from an earlier call). ' +
+      'Returns the new ids and any problems (dropped objects, overlaps).',
+    inputSchema: {
+      objects: z.array(objectSchema),
+      environment: environmentSchema.optional(),
+      spawn: spawnSchema.optional(),
+    },
+  },
+  {
+    name: 'move_object',
+    action: 'move',
+    description: 'Move and/or rotate an existing object by id. Objects stacked on it do not move with it.',
+    inputSchema: {
+      id: z.string(),
       x: z.number(),
       z: z.number(),
-      look_at_x: z.number().optional().describe('Point the player looks at (default 5)'),
-      look_at_z: z.number().optional(),
-    }),
-    objects: z.array(objectSchema),
+      rotation: z.number().optional().describe('New rotation in degrees (default: keep)'),
+      y: z.number().optional().describe('New bottom height (default: keep)'),
+    },
   },
-};
+  {
+    name: 'remove_objects',
+    action: 'remove',
+    description: 'Delete objects by id.',
+    inputSchema: { ids: z.array(z.string()) },
+  },
+  {
+    name: 'capture_view',
+    action: 'capture',
+    description:
+      'Look at the current world: returns images (top-down map with a 1 m grid and object ids, an overview, and eye-level ' +
+      'views from open spots) plus a text list of every object with its footprint. Use it after each phase and fix what looks wrong.',
+    inputSchema: {
+      views: z.array(z.enum(['top', 'overview', 'eye', 'north', 'south', 'east', 'west', 'player'])).optional()
+        .describe('Default: top, overview and 2 eye-level views'),
+    },
+  },
+  {
+    name: 'finish',
+    action: 'finish',
+    description: 'Call when the world is complete.',
+    inputSchema: { summary: z.string().optional().describe('One sentence describing the world') },
+  },
+];
 
-export const buildWorldArgs = z.object(BUILD_WORLD.inputSchema);
+export const TOOL_BY_ACTION = Object.fromEntries(TOOLS.map((t) => [t.action, t]));
+export const argsSchema = (tool) => z.object(tool.inputSchema);
 
-// OpenAI-style function spec for non-MCP agents.
-export function buildWorldSpec() {
-  const { $schema, ...parameters } = z.toJSONSchema(buildWorldArgs);
-  return { name: BUILD_WORLD.name, description: BUILD_WORLD.description, parameters };
-}
-
-// Text returned to the agent after a build, identical for every backend.
-export function buildResultText(data) {
-  let msg = `World built with ${data.placed} objects.`;
-  if (data.problems.length) msg += ` Skipped/adjusted: ${data.problems.join('; ')}`;
-  return `${msg}\nThe world is final. Reply with one short sentence describing it.`;
+// OpenAI-style function specs for non-MCP agents, with the endpoint action attached.
+export function toolSpecs() {
+  return TOOLS.map((t) => {
+    const { $schema, ...parameters } = z.toJSONSchema(argsSchema(t));
+    return { name: t.name, description: t.description, parameters, action: t.action };
+  });
 }

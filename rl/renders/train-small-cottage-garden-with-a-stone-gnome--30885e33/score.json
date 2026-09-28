@@ -1,0 +1,33 @@
+{
+ "id": "train-small-cottage-garden-with-a-stone-gnome--30885e33",
+ "geo": 0.9311444652908069,
+ "geometry": {
+  "score": 0.9311444652908069,
+  "n": 82,
+  "overlaps": 0,
+  "coverage": 0.43,
+  "small": 65,
+  "stacked": 19,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9555555555555555,
+  "c_stacking": 0.5846153846153846,
+  "c_variety": 0.853658536585366,
+  "c_orientation": 0.8666666666666667
+ },
+ "problems": 0,
+ "n": 82,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "free-standing door with no cottage; gnome/planters/gazania barely visible, scattered randomly, no blooms or walkway"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.4127861163227017,
+ "ms": 10727
+}

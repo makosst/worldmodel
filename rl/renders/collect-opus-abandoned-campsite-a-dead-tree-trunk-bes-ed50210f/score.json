@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-campsite-a-dead-tree-trunk-bes-ed50210f",
+ "geo": 0.9292105263157897,
+ "geometry": {
+  "score": 0.9292105263157897,
+  "n": 52,
+  "overlaps": 0,
+  "coverage": 0.68,
+  "small": 19,
+  "stacked": 8,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.8421052631578947,
+  "c_variety": 1,
+  "c_orientation": 0.45
+ },
+ "problems": 1,
+ "n": 52,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 4,
+  "note": "flat green void with random scattered props, no forest/terrain, no real grouping around stove"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5473026315789474,
+ "ms": 20051
+}

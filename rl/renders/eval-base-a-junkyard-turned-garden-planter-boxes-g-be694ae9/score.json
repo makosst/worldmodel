@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-a-junkyard-turned-garden-planter-boxes-g-be694ae9",
+ "geo": 0.9728571428571431,
+ "geometry": {
+  "score": 0.9728571428571431,
+  "n": 56,
+  "overlaps": 0,
+  "coverage": 0.44,
+  "small": 22,
+  "stacked": 15,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9777777777777777,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7619047619047619
+ },
+ "problems": 0,
+ "n": 56,
+ "judge": {
+  "prompt": 6,
+  "realism": 5,
+  "composition": 4,
+  "density": 3,
+  "orientation": 6,
+  "note": "bare flat ground with no grass/soil, large empty gaps between clusters"
+ },
+ "judgeScore": 0.48,
+ "reward": 0.6032142857142857,
+ "ms": 14141
+}

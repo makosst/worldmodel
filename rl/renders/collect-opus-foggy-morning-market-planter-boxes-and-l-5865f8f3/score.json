@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-morning-market-planter-boxes-and-l-5865f8f3",
+ "geo": 0.9857142857142859,
+ "geometry": {
+  "score": 0.9857142857142859,
+  "n": 79,
+  "overlaps": 0,
+  "coverage": 0.47,
+  "small": 53,
+  "stacked": 48,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8571428571428571
+ },
+ "problems": 1,
+ "n": 79,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "no fog/atmosphere, bright blue sky/flat green ground, no visible lemons or planter boxes distinctly, scattered clutter not grouped as market stalls"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.5164285714285715,
+ "ms": 9730
+}

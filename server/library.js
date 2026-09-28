@@ -11,8 +11,13 @@ export const EMBED_MODEL = process.env.WORLD_EMBED_MODEL || 'text-embedding-3-sm
 const MAX_MODELS = Number(process.env.WORLD_MAX_MODELS || 60);
 const PER_PROMPT = 30; // candidates from the whole prompt
 const PER_PHRASE = 12; // candidates from each phrase of the prompt
+const PER_FRAME = 8; // candidates from the framing query (walls, fences, structures)
 const MARGIN = 0.15; // keep models within this cosine of a query's best match
 const EXCLUDED_STYLES = new Set(['untextured base mesh']);
+// The island is 10x10 m: models bigger than this at real size would have to be shrunk.
+const MAX_FOOTPRINT = 8;
+const MAX_HEIGHT = 12;
+const PARTS_PER_SET = 4; // pieces of one multi-object file offered at most
 
 export async function embedTexts(texts) {
   const key = process.env.OPENAI_API_KEY;
@@ -82,14 +87,21 @@ export async function selectModels(prompt) {
   const lib = loadLibrary();
   if (!lib) return null;
   const t0 = Date.now();
-  const queries = [prompt, ...phrases(prompt).filter((p) => p !== prompt.toLowerCase())];
+  const parts = phrases(prompt).filter((p) => p !== prompt.toLowerCase());
+  // Props alone read as a scatter; this query brings in walls/fences/structures that frame the place.
+  const frame = `walls, fences, doors and building structures for ${parts[0] || prompt}`;
+  const queries = [prompt, ...parts, frame];
   const vecs = await embedTexts(queries);
   const sims = vecs.map((v) => cosines(lib, v));
 
   // 1. Art style: the one whose best few matches fit all queries best.
+  const wantsFort = /\b(castle|fort|fortress|keep|rampart|citadel|stronghold)\b/i.test(prompt);
   const byStyle = new Map();
   lib.models.forEach((m, i) => {
     if (EXCLUDED_STYLES.has(m.art_style)) return;
+    const [w, h, d] = m.localSize.map((v) => v * m.scale);
+    if (Math.max(w, d) > MAX_FOOTPRINT || h > MAX_HEIGHT) return;
+    if (!wantsFort && /fortification/i.test(m.category)) return; // 8 m castle walls dwarf everything else
     const key = m.art_style.startsWith('realistic') ? 'realistic' : m.art_style; // PBR and scanned PBR mix fine
     if (!byStyle.has(key)) byStyle.set(key, []);
     byStyle.get(key).push(i);
@@ -110,12 +122,19 @@ export async function selectModels(prompt) {
   sims.forEach((q, qi) => {
     const ranked = [...pool].sort((a, b) => q[b] - q[a]);
     const floor = q[ranked[0]] - MARGIN;
-    for (const i of ranked.slice(0, qi === 0 ? PER_PROMPT : PER_PHRASE)) {
+    const limit = qi === 0 ? PER_PROMPT : qi === sims.length - 1 ? PER_FRAME : PER_PHRASE;
+    for (const i of ranked.slice(0, limit)) {
       if (q[i] < floor) break;
       picked.set(i, Math.max(picked.get(i) ?? -1, q[i]));
     }
   });
-  const chosen = [...picked].sort((a, b) => b[1] - a[1]).slice(0, MAX_MODELS);
+  const perSet = new Map();
+  const chosen = [...picked].sort((a, b) => b[1] - a[1]).filter(([i]) => {
+    const set = lib.models[i].parent;
+    if (!set) return true;
+    perSet.set(set, (perSet.get(set) || 0) + 1);
+    return perSet.get(set) <= PARTS_PER_SET;
+  }).slice(0, MAX_MODELS);
 
   const catalog = {};
   for (const [i, sim] of chosen) {
@@ -127,6 +146,8 @@ export async function selectModels(prompt) {
       description: m.description,
       scale: m.scale,
       pivot: m.pivot,
+      nodes: m.nodes,
+      yaw: m.yaw || 0,
       localSize: m.localSize,
       size: m.localSize.map((v) => Math.round(v * m.scale * 100) / 100),
       similarity: Math.round(sim * 1000) / 1000,

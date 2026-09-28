@@ -8,6 +8,9 @@ const form = document.getElementById('prompt');
 const input = document.getElementById('input');
 const sendBtn = document.getElementById('send');
 const statusEl = document.getElementById('status');
+const currentEl = document.getElementById('current');
+// The prompt of the world on screen, shown top right.
+const showPrompt = (text) => { currentEl.textContent = text || ''; currentEl.classList.toggle('show', !!text); };
 const hintEl = document.getElementById('hint');
 const galleryEl = document.getElementById('gallery');
 const homeBtn = document.getElementById('home');
@@ -18,7 +21,7 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const camera = new THREE.PerspectiveCamera(65, 1, 0.05, 300);
-const world = new World({ animate: true });
+const world = new World({ animate: true, renderer });
 let snapshot = null;
 let events = null;
 let busy = false;
@@ -38,6 +41,11 @@ function describeTool(e) {
   const i = e.input || {};
   switch (e.name) {
     case 'build_world': return 'Laying out the world…';
+    case 'place_objects': return 'Placing objects…';
+    case 'move_object': return `Moving #${i.id}`;
+    case 'remove_objects': return 'Removing objects';
+    case 'capture_view': return 'Looking at the world…';
+    case 'finish': return 'Finishing touches';
     case 'place_object': return `Placing ${String(i.model).replace(/-/g, ' ')}`;
     case 'remove_object': return `Removing #${i.id}`;
     case 'set_environment': return `Setting the scene${i.sky ? ` · ${i.sky}` : ''}${i.ground ? ` · ${i.ground}` : ''}`;
@@ -75,7 +83,8 @@ form.addEventListener('submit', async (e) => {
   input.blur();
   document.body.classList.remove('idle');
   setBusy(true);
-  setStatus('Starting Claude…');
+  setStatus('Starting…');
+  showPrompt(prompt);
   world.clear();
   snapshot = null;
   exitPlay();
@@ -101,6 +110,7 @@ function listen(id) {
     switch (e.type) {
       case 'snapshot':
         snapshot = e.world;
+        showPrompt(e.prompt);
         world.clear();
         world.sync(snapshot);
         placeAtSpawn();
@@ -140,7 +150,7 @@ function listen(id) {
 
 function finish(prompt) {
   setBusy(false);
-  setStatus(prompt ? `${prompt} · click to walk` : 'World ready — click it to walk around', 'done');
+  setStatus('World ready: click it to walk around', 'done');
   events?.close();
 }
 
@@ -238,11 +248,29 @@ const keys = new Set();
 let octree = new Octree();
 let rebuildTimer = null;
 
+// Collide against each object's bounding box (the same boxes the server places and
+// stacks with) rather than its render mesh: realistic models have hundreds of
+// thousands of triangles, which made octree rebuilds freeze the page.
+const unitBox = new THREE.BoxGeometry(1, 1, 1);
+function collisionScene() {
+  const root = new THREE.Group();
+  root.add(world.ground.clone());
+  for (const { data } of world.objects.values()) {
+    const { w, d, h } = data.extent;
+    const box = new THREE.Mesh(unitBox);
+    box.scale.set(w, h, d);
+    box.position.set(data.x, data.y + h / 2, data.z);
+    root.add(box);
+  }
+  root.updateMatrixWorld(true);
+  return root;
+}
+
 function rebuildOctree() {
   clearTimeout(rebuildTimer);
   rebuildTimer = setTimeout(() => {
-    octree = new Octree().fromGraphNode(world.scene);
-  }, 700);
+    octree = new Octree().fromGraphNode(collisionScene());
+  }, 50);
 }
 world.onChange = rebuildOctree;
 rebuildOctree();

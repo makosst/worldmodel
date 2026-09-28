@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-festive-cafe-evening-string-lights-above-9eccded6",
+ "geo": 0.9666666666666668,
+ "geometry": {
+  "score": 0.9666666666666668,
+  "n": 62,
+  "overlaps": 0,
+  "coverage": 0.47,
+  "small": 40,
+  "stacked": 24,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6666666666666666
+ },
+ "problems": 1,
+ "n": 62,
+ "judge": {
+  "prompt": 2,
+  "realism": 3,
+  "composition": 2,
+  "density": 5,
+  "orientation": 3,
+  "note": "no string lights at all; just park lamp posts, and furniture is scattered without one grouped cafe seating area"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4666666666666667,
+ "ms": 33637
+}

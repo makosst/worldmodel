@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-quiet-dock-at-dawn-lifebuoy-and-ocean-bu-6c9641a6",
+ "geo": 0.9333333333333335,
+ "geometry": {
+  "score": 0.9333333333333335,
+  "n": 56,
+  "overlaps": 0,
+  "coverage": 0.64,
+  "small": 26,
+  "stacked": 22,
+  "unique": 17,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.3333333333333333
+ },
+ "problems": 0,
+ "n": 56,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 6,
+  "orientation": 2,
+  "note": "no pier deck or water; giant buoy and floating lifebuoys clipping above scattered barrels"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.45833333333333337,
+ "ms": 12376
+}

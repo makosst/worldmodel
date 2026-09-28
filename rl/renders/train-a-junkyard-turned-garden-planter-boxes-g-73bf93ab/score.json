@@ -1,0 +1,33 @@
+{
+ "id": "train-a-junkyard-turned-garden-planter-boxes-g-73bf93ab",
+ "geo": 0.9888106416275432,
+ "geometry": {
+  "score": 0.9888106416275432,
+  "n": 71,
+  "overlaps": 1,
+  "coverage": 0.51,
+  "small": 33,
+  "stacked": 26,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.971830985915493,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9444444444444444
+ },
+ "problems": 0,
+ "n": 71,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 4,
+  "density": 4,
+  "orientation": 5,
+  "note": "fence panels float disconnected in a fan shape, not enclosing; tires stacked as vertical totems instead of realistic piles"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5922026604068859,
+ "ms": 14979
+}

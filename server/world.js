@@ -13,6 +13,8 @@ export const GROUNDS = {
 };
 
 export const SKIES = ['day', 'sunset', 'night', 'overcast'];
+export const WEATHERS = ['clear', 'rain', 'snow', 'fog', 'dust'];
+export const SHADINGS = ['bright', 'soft', 'golden', 'moody', 'night'];
 
 const r2 = (v) => Math.round(v * 100) / 100;
 
@@ -23,8 +25,10 @@ function headingTo(x, z, tx, tz) {
 }
 
 export class World {
-  constructor(catalog) {
+  // envOptions: { ground: {id: {maps, tile}}, sky: {id: {hdr}} } offered textures/HDRIs for this session.
+  constructor(catalog, envOptions = { ground: {}, sky: {} }) {
     this.catalog = catalog;
+    this.envOptions = envOptions;
     this.objects = new Map();
     this.nextId = 1;
     this.environment = { ground: 'grass', sky: 'day', fog: 0 };
@@ -45,11 +49,12 @@ export class World {
     };
   }
 
-  // Axis-aligned footprint/height of an object after rotation and scale.
+  // Axis-aligned footprint/height of an object after rotation and scale. model.yaw is the
+  // per-model turn that makes its front face +z at rotation 0 (from orient-library.mjs).
   static extent(model, scale, rotationDeg) {
     const s = model.scale * scale;
     const [w, h, d] = model.localSize.map((v) => v * s);
-    const a = (rotationDeg * Math.PI) / 180;
+    const a = ((rotationDeg + (model.yaw || 0)) * Math.PI) / 180;
     const c = Math.abs(Math.cos(a));
     const sn = Math.abs(Math.sin(a));
     return { w: w * c + d * sn, d: w * sn + d * c, h };
@@ -69,7 +74,12 @@ export class World {
   place({ model, x, z, rotation = 0, scale = 1, y, on_top_of, face_x, face_z }) {
     if (face_x != null && face_z != null) rotation = headingTo(x, z, face_x, face_z);
     const m = this.catalog[model];
-    if (!m) throw new Error(`Unknown model "${model}". Available: ${Object.keys(this.catalog).join(', ')}`);
+    if (!m) {
+      // Suggest close names instead of listing the whole catalog (which costs the agent a lot of tokens).
+      const words = String(model).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2);
+      const close = Object.keys(this.catalog).filter((k) => words.some((w) => k.toLowerCase().includes(w))).slice(0, 8);
+      throw new Error(`Unknown model "${model}". Use an exact name from the model list${close.length ? `, e.g. ${close.join(', ')}` : ''}.`);
+    }
     if (!(scale > 0.05 && scale <= 10)) throw new Error('scale must be between 0.05 and 10');
     const extent = World.extent(m, scale, rotation);
     let baseY = y ?? 0;
@@ -83,6 +93,8 @@ export class World {
       model,
       url: m.url,
       pivot: m.pivot,
+      nodes: m.nodes, // glTF node indices when the model is one piece of a multi-object file
+      yaw: m.yaw || undefined, // turn applied inside the object so its front faces its rotation
       scale: m.scale * scale,
       userScale: scale,
       rotation: Math.round(rotation),
@@ -139,16 +151,31 @@ export class World {
     return o;
   }
 
-  setEnvironment({ ground, sky, fog }) {
+  // ground/sky: an offered texture/HDRI id, or a legacy plain color name (older worlds, RL scorer).
+  // The snapshot stores the texture/HDRI URLs so saved worlds render without the texture index.
+  setEnvironment({ ground, sky, fog, weather, shading }) {
+    const env = this.environment;
     if (ground != null) {
-      if (!GROUNDS[ground]) throw new Error(`ground must be one of ${Object.keys(GROUNDS).join(', ')}`);
-      this.environment.ground = ground;
+      const tex = this.envOptions.ground?.[ground];
+      if (tex) Object.assign(env, { ground, groundTexture: { maps: tex.maps, tile: tex.tile } });
+      else if (GROUNDS[ground]) { env.ground = ground; delete env.groundTexture; }
+      else throw new Error(`ground must be one of the offered textures (${Object.keys(this.envOptions.ground || {}).join(', ')}) or ${Object.keys(GROUNDS).join(', ')}`);
     }
     if (sky != null) {
-      if (!SKIES.includes(sky)) throw new Error(`sky must be one of ${SKIES.join(', ')}`);
-      this.environment.sky = sky;
+      const hdri = this.envOptions.sky?.[sky];
+      if (hdri) Object.assign(env, { sky, skyHdr: hdri.hdr });
+      else if (SKIES.includes(sky)) { env.sky = sky; delete env.skyHdr; }
+      else throw new Error(`sky must be one of the offered skies (${Object.keys(this.envOptions.sky || {}).join(', ')}) or ${SKIES.join(', ')}`);
     }
-    if (fog != null) this.environment.fog = Math.max(0, Math.min(1, fog));
+    if (weather != null) {
+      if (!WEATHERS.includes(weather)) throw new Error(`weather must be one of ${WEATHERS.join(', ')}`);
+      env.weather = weather;
+    }
+    if (shading != null) {
+      if (!SHADINGS.includes(shading)) throw new Error(`shading must be one of ${SHADINGS.join(', ')}`);
+      env.shading = shading;
+    }
+    if (fog != null) env.fog = Math.max(0, Math.min(1, fog));
     this.emit({ type: 'environment', environment: this.environment });
     return this.environment;
   }
@@ -219,7 +246,7 @@ export class World {
       return `#${o.id} ${o.model} at (x ${o.x}, z ${o.z}, base y ${o.y}) rot ${o.rotation}° scale ${o.userScale} → footprint x ${r2(b.minX)}..${r2(b.maxX)}, z ${r2(b.minZ)}..${r2(b.maxZ)}, top y ${r2(b.maxY)}`;
     });
     return (
-      `Environment: ground ${this.environment.ground}, sky ${this.environment.sky}, fog ${this.environment.fog}. ` +
+      `Environment: ground ${this.environment.ground}, sky ${this.environment.sky}, weather ${this.environment.weather || 'clear'}, shading ${this.environment.shading || 'default'}, fog ${this.environment.fog}. ` +
       `Player spawn (x ${this.spawn.x}, z ${this.spawn.z}) facing ${this.spawn.facing}°.\n` +
       (lines.length ? lines.join('\n') : 'No objects placed yet.')
     );

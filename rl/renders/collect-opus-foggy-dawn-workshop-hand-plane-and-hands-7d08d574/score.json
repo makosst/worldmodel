@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-dawn-workshop-hand-plane-and-hands-7d08d574",
+ "geo": 0.9750000000000001,
+ "geometry": {
+  "score": 0.9750000000000001,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.51,
+  "small": 39,
+  "stacked": 29,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.75
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 5,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 4,
+  "note": "objects float on bare grass with no walls/fog, workshop scattered instead of grouped"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.51375,
+ "ms": 54129
+}

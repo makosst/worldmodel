@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-alley-littered-with-trash-bags-ec856a06",
+ "geo": 0.9685714285714287,
+ "geometry": {
+  "score": 0.9685714285714287,
+  "n": 68,
+  "overlaps": 0,
+  "coverage": 0.5,
+  "small": 26,
+  "stacked": 16,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6857142857142857
+ },
+ "problems": 1,
+ "n": 68,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 4,
+  "density": 5,
+  "orientation": 3,
+  "note": "green grass ground with floating/scattered props, no alley walls or pavement, not grounded"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5421428571428573,
+ "ms": 8739
+}

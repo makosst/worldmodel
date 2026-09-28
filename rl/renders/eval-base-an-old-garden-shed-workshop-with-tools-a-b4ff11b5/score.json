@@ -1,0 +1,34 @@
+{
+ "id": "eval-base-an-old-garden-shed-workshop-with-tools-a-b4ff11b5",
+ "geo": 0.9600000000000002,
+ "geometry": {
+  "score": 0.9600000000000002,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 22,
+  "stacked": 18,
+  "unique": 47,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6
+ },
+ "problems": 0,
+ "n": 61,
+ "judgeError": "judge failed: bad orientation 0,\"type\":\"result\",\"duration_ms\":6353,\"uuid\":\"c5040798-6835-42e8-85a6-91af0627ad40\",\"ttft_stream_ms\":1977,\"time_to_request_ms\":353,\"first_content_frame_ms\":1977,\"queued_turn_count\":0,\"result_index\":0}\n",
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 3,
+  "density": 7,
+  "orientation": 3,
+  "note": "no shed walls/roof enclosure, just fence-like panels; items scattered without workbench-centric grouping, no visible walkway"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5850000000000001,
+ "ms": 15728
+}

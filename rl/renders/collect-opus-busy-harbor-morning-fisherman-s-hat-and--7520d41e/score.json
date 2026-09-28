@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-harbor-morning-fisherman-s-hat-and--7520d41e",
+ "geo": 0.9390451832907076,
+ "geometry": {
+  "score": 0.9390451832907076,
+  "n": 51,
+  "overlaps": 5,
+  "coverage": 0.62,
+  "small": 22,
+  "stacked": 15,
+  "unique": 25,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.803921568627451,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.782608695652174
+ },
+ "problems": 1,
+ "n": 51,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 2,
+  "orientation": 2,
+  "note": "low-poly scatter with numbered placeholder blobs, floating/leaning poles, no boats/pier structure, hat and rope barely legible"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4297612958226769,
+ "ms": 8957
+}

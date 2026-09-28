@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-camp-clearing-a-wooden-bucket-and--5dc57fb6",
+ "geo": 0.9071666666666669,
+ "geometry": {
+  "score": 0.9071666666666669,
+  "n": 52,
+  "overlaps": 0,
+  "coverage": 0.44,
+  "small": 25,
+  "stacked": 6,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9777777777777777,
+  "c_stacking": 0.48,
+  "c_variety": 1,
+  "c_orientation": 0.625
+ },
+ "problems": 1,
+ "n": 52,
+ "judge": {
+  "prompt": 7,
+  "realism": 4,
+  "composition": 4,
+  "density": 5,
+  "orientation": 4,
+  "note": "random fence/ladder clutter, flat grass not dirt clearing, some props float/clip"
+ },
+ "judgeScore": 0.48,
+ "reward": 0.5867916666666667,
+ "ms": 19165
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-small-garage-workspace-a-bench-vice-besi-80e36c53",
+ "geo": 0.9671380471380472,
+ "geometry": {
+  "score": 0.9671380471380472,
+  "n": 54,
+  "overlaps": 1,
+  "coverage": 0.5,
+  "small": 25,
+  "stacked": 13,
+  "unique": 25,
+  "c_density": 1,
+  "c_validity": 0.9818181818181818,
+  "c_overlap": 0.962962962962963,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7727272727272727
+ },
+ "problems": 1,
+ "n": 54,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "open fence-walls under sky, no enclosed garage; no clear vice/toolbox, tires scattered not stacked"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5267845117845118,
+ "ms": 28282
+}

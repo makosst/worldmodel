@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-garage-a-dusty-drill-press-bes-43587488",
+ "geo": 0.6385180854548803,
+ "geometry": {
+  "score": 0.6385180854548803,
+  "n": 29,
+  "overlaps": 2,
+  "coverage": 0.31,
+  "small": 11,
+  "stacked": 2,
+  "unique": 17,
+  "c_density": 0.58,
+  "c_validity": 0.6304347826086957,
+  "c_overlap": 0.8620689655172413,
+  "c_coverage": 0.6888888888888889,
+  "c_stacking": 0.36363636363636365,
+  "c_variety": 1,
+  "c_orientation": 0.3684210526315789
+ },
+ "problems": 17,
+ "n": 29,
+ "judge": {
+  "prompt": 3,
+  "realism": 5,
+  "composition": 3,
+  "density": 3,
+  "orientation": 4,
+  "note": "scene dominated by an unprompted covered car; drill press and wheel rim barely identifiable"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.4296295213637201,
+ "ms": 16773
+}

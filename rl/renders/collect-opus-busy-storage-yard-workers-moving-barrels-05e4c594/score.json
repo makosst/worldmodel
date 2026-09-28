@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-storage-yard-workers-moving-barrels-05e4c594",
+ "geo": 0.9461538461538463,
+ "geometry": {
+  "score": 0.9461538461538463,
+  "n": 62,
+  "overlaps": 0,
+  "coverage": 0.65,
+  "small": 18,
+  "stacked": 16,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.46153846153846156
+ },
+ "problems": 1,
+ "n": 62,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 5,
+  "density": 6,
+  "orientation": 6,
+  "note": "no worker figures at all; grass field and fantasy stone arches instead of a paved industrial yard"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5815384615384616,
+ "ms": 43345
+}

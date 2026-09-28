@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-night-dock-lit-by-lantern-a-sea-marker-g-d204b464",
+ "geo": 0.8582051282051283,
+ "geometry": {
+  "score": 0.8582051282051283,
+  "n": 50,
+  "overlaps": 0,
+  "coverage": 0.69,
+  "small": 29,
+  "stacked": 0,
+  "unique": 14,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0,
+  "c_variety": 0.9333333333333335,
+  "c_orientation": 0.6153846153846154
+ },
+ "problems": 1,
+ "n": 50,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 5,
+  "orientation": 3,
+  "note": "no water or dock structure; giant oversized buoys scattered on bare grass"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.45455128205128204,
+ "ms": 14750
+}

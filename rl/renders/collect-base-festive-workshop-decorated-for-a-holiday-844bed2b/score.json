@@ -1,0 +1,33 @@
+{
+ "id": "collect-base-festive-workshop-decorated-for-a-holiday-844bed2b",
+ "geo": 0.9833333333333335,
+ "geometry": {
+  "score": 0.9833333333333335,
+  "n": 62,
+  "overlaps": 0,
+  "coverage": 0.56,
+  "small": 34,
+  "stacked": 28,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8333333333333334
+ },
+ "problems": 0,
+ "n": 62,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 3,
+  "note": "objects float disconnected in midair, no coherent workshop structure or grounded lantern strings"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4408333333333334,
+ "ms": 13284
+}

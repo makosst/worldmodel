@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-shed-interior-warmed-by-lantern-lig-c882feb7",
+ "geo": 0.9435483870967742,
+ "geometry": {
+  "score": 0.9435483870967742,
+  "n": 65,
+  "overlaps": 0,
+  "coverage": 0.3,
+  "small": 29,
+  "stacked": 27,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6666666666666666,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9354838709677419
+ },
+ "problems": 1,
+ "n": 65,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "outdoor fenced pen with floating chandelier, no shed structure/roof/door/gloves"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.43088709677419357,
+ "ms": 20388
+}

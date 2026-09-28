@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-stormy-dock-scene-guardrail-battered-nea-cd3866ec",
+ "geo": 0.9368367346938776,
+ "geometry": {
+  "score": 0.9368367346938776,
+  "n": 49,
+  "overlaps": 1,
+  "coverage": 0.8,
+  "small": 13,
+  "stacked": 13,
+  "unique": 20,
+  "c_density": 0.98,
+  "c_validity": 1,
+  "c_overlap": 0.9591836734693877,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5
+ },
+ "problems": 1,
+ "n": 49,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "no water/pier/stormy sky; giant buoy floats detached from ground"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4442091836734694,
+ "ms": 19546
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-garage-a-dusty-drill-press-bes-6beca76c",
+ "geo": 0.9454901960784314,
+ "geometry": {
+  "score": 0.9454901960784314,
+  "n": 51,
+  "overlaps": 1,
+  "coverage": 0.53,
+  "small": 19,
+  "stacked": 11,
+  "unique": 26,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9607843137254902,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5333333333333333
+ },
+ "problems": 0,
+ "n": 51,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 4,
+  "density": 4,
+  "orientation": 5,
+  "note": "fence-like perimeter panels instead of walls, empty center, dominant car cover unrelated to prompt"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5813725490196079,
+ "ms": 36715
+}

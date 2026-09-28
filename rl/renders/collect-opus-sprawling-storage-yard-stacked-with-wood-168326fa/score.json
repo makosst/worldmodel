@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sprawling-storage-yard-stacked-with-wood-168326fa",
+ "geo": 0.9513513513513514,
+ "geometry": {
+  "score": 0.9513513513513514,
+  "n": 74,
+  "overlaps": 1,
+  "coverage": 0.52,
+  "small": 18,
+  "stacked": 14,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.972972972972973,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5675675675675675
+ },
+ "problems": 1,
+ "n": 74,
+ "judge": {
+  "prompt": 7,
+  "realism": 3,
+  "composition": 4,
+  "density": 4,
+  "orientation": 5,
+  "note": "grass ground and low-poly clutter look unrealistic for an industrial yard"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5828378378378378,
+ "ms": 44407
+}

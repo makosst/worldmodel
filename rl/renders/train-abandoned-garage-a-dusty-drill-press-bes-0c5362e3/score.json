@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-garage-a-dusty-drill-press-bes-0c5362e3",
+ "geo": 0.9317756667884545,
+ "geometry": {
+  "score": 0.9317756667884545,
+  "n": 68,
+  "overlaps": 2,
+  "coverage": 0.55,
+  "small": 32,
+  "stacked": 16,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 0.9714285714285714,
+  "c_overlap": 0.9411764705882353,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.4782608695652174
+ },
+ "problems": 2,
+ "n": 68,
+ "judge": {
+  "prompt": 7,
+  "realism": 4,
+  "composition": 5,
+  "density": 7,
+  "orientation": 6,
+  "note": "drill press floats oversized above bin, scale/clipping issue"
+ },
+ "judgeScore": 0.58,
+ "reward": 0.6679439166971135,
+ "ms": 26677
+}

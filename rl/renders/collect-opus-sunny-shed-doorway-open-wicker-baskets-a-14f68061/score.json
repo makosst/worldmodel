@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-shed-doorway-open-wicker-baskets-a-14f68061",
+ "geo": 0.9741025641025642,
+ "geometry": {
+  "score": 0.9741025641025642,
+  "n": 70,
+  "overlaps": 0,
+  "coverage": 0.43,
+  "small": 45,
+  "stacked": 31,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8076923076923077
+ },
+ "problems": 1,
+ "n": 70,
+ "judge": {
+  "prompt": 6,
+  "realism": 5,
+  "composition": 3,
+  "density": 6,
+  "orientation": 5,
+  "note": "baskets scattered across yard, not piled at doorway"
+ },
+ "judgeScore": 0.5,
+ "reward": 0.618525641025641,
+ "ms": 13963
+}

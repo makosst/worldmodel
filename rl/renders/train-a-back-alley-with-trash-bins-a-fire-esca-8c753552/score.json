@@ -1,0 +1,33 @@
+{
+ "id": "train-a-back-alley-with-trash-bins-a-fire-esca-8c753552",
+ "geo": 0.9575757575757577,
+ "geometry": {
+  "score": 0.9575757575757577,
+  "n": 56,
+  "overlaps": 0,
+  "coverage": 0.52,
+  "small": 13,
+  "stacked": 9,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5757575757575758
+ },
+ "problems": 0,
+ "n": 56,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 4,
+  "note": "fire escape floats disconnected from any building wall"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5243939393939394,
+ "ms": 38482
+}

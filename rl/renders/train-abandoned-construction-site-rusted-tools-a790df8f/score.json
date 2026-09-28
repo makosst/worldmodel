@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-construction-site-rusted-tools-a790df8f",
+ "geo": 0.9240740740740742,
+ "geometry": {
+  "score": 0.9240740740740742,
+  "n": 72,
+  "overlaps": 3,
+  "coverage": 0.53,
+  "small": 27,
+  "stacked": 10,
+  "unique": 29,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9166666666666666,
+  "c_coverage": 1,
+  "c_stacking": 0.7407407407407407,
+  "c_variety": 1,
+  "c_orientation": 0.6666666666666666
+ },
+ "problems": 0,
+ "n": 72,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 3,
+  "density": 7,
+  "orientation": 3,
+  "note": "objects tightly clustered/overlapping with no walkways, tools scattered randomly not grouped with cement bags, fences oddly placed as walls"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.5760185185185186,
+ "ms": 25446
+}

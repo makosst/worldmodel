@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-campsite-fire-pit-glowing-beside-a--7a469e84",
+ "geo": 0.9165734265734267,
+ "geometry": {
+  "score": 0.9165734265734267,
+  "n": 55,
+  "overlaps": 0,
+  "coverage": 0.37,
+  "small": 45,
+  "stacked": 25,
+  "unique": 13,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8222222222222222,
+  "c_stacking": 1,
+  "c_variety": 0.7878787878787878,
+  "c_orientation": 0.5384615384615384
+ },
+ "problems": 1,
+ "n": 55,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "scattered random clutter, no clear fire pit + stool + lantern grouping, chairs/stools misaligned and floating props"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5141433566433566,
+ "ms": 9214
+}

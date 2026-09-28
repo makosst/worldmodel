@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-morning-cafe-a-coffee-table-clutter-867814e5",
+ "geo": 0.9413519813519814,
+ "geometry": {
+  "score": 0.9413519813519814,
+  "n": 77,
+  "overlaps": 0,
+  "coverage": 0.38,
+  "small": 62,
+  "stacked": 58,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 0.9090909090909091,
+  "c_orientation": 0.6923076923076923
+ },
+ "problems": 1,
+ "n": 77,
+ "judge": {
+  "prompt": 5,
+  "realism": 4,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "tables scattered with no seating groups; chairs not facing tables, no walkways, bare grass floor breaks cafe illusion"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5353379953379954,
+ "ms": 29643
+}

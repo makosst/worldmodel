@@ -1,0 +1,33 @@
+{
+ "id": "train-cozy-kitchen-corner-brass-pots-simmering-0302812e",
+ "geo": 0.9833333333333334,
+ "geometry": {
+  "score": 0.9833333333333334,
+  "n": 60,
+  "overlaps": 0,
+  "coverage": 0.4,
+  "small": 37,
+  "stacked": 35,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.888888888888889,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 60,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 3,
+  "orientation": 3,
+  "note": "scattered disconnected furniture on bare ground, no walls/counter forming a corner, floating objects"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4708333333333333,
+ "ms": 7721
+}

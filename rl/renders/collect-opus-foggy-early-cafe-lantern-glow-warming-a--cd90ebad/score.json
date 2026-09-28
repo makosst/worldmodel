@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-early-cafe-lantern-glow-warming-a--cd90ebad",
+ "geo": 0.9466666666666668,
+ "geometry": {
+  "score": 0.9466666666666668,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.34,
+  "small": 44,
+  "stacked": 40,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8333333333333334
+ },
+ "problems": 1,
+ "n": 61,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "objects scattered across whole field with no walls, floor, or fog—no cohesive cafe space"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4766666666666667,
+ "ms": 29193
+}

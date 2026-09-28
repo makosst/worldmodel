@@ -1,0 +1,33 @@
+{
+ "id": "train-sunny-picnic-clearing-folding-stools-bes-0bcf28ec",
+ "geo": 0.8934751773049647,
+ "geometry": {
+  "score": 0.8934751773049647,
+  "n": 58,
+  "overlaps": 0,
+  "coverage": 0.44,
+  "small": 47,
+  "stacked": 11,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9777777777777777,
+  "c_stacking": 0.46808510638297873,
+  "c_variety": 1,
+  "c_orientation": 0.5
+ },
+ "problems": 0,
+ "n": 58,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 6,
+  "orientation": 3,
+  "note": "scattered random clutter (sofas, workbenches, anvils) instead of a coherent picnic grouping"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4783687943262412,
+ "ms": 15398
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-alley-corner-a-street-rat-scurryin-cc9cf069",
+ "geo": 0.9737500000000001,
+ "geometry": {
+  "score": 0.9737500000000001,
+  "n": 64,
+  "overlaps": 1,
+  "coverage": 0.57,
+  "small": 34,
+  "stacked": 18,
+  "unique": 20,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.96875,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8
+ },
+ "problems": 1,
+ "n": 64,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no rat, no fog, grass ground instead of alley pavement/walls"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.45343750000000005,
+ "ms": 10845
+}

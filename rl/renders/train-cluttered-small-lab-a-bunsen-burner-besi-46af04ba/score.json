@@ -1,0 +1,33 @@
+{
+ "id": "train-cluttered-small-lab-a-bunsen-burner-besi-46af04ba",
+ "geo": 0.9233333333333333,
+ "geometry": {
+  "score": 0.9233333333333333,
+  "n": 75,
+  "overlaps": 0,
+  "coverage": 0.33,
+  "small": 60,
+  "stacked": 47,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7333333333333334,
+  "c_stacking": 1,
+  "c_variety": 0.9333333333333335,
+  "c_orientation": 0.6666666666666666
+ },
+ "problems": 0,
+ "n": 75,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 4,
+  "note": "no clear bunsen burner/beakers, huge empty floor, floating dark wall panels"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4708333333333333,
+ "ms": 12351
+}

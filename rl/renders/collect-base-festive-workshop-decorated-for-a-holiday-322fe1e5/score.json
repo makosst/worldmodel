@@ -1,0 +1,33 @@
+{
+ "id": "collect-base-festive-workshop-decorated-for-a-holiday-322fe1e5",
+ "geo": 0.9966666666666668,
+ "geometry": {
+  "score": 0.9966666666666668,
+  "n": 53,
+  "overlaps": 0,
+  "coverage": 0.44,
+  "small": 29,
+  "stacked": 23,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9777777777777777,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 53,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "lanterns floating disconnected mid-air, no visible strung wires, no walls/roof, objects scattered untethered"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4891666666666667,
+ "ms": 21184
+}

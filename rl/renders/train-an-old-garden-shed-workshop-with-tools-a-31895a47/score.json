@@ -1,0 +1,33 @@
+{
+ "id": "train-an-old-garden-shed-workshop-with-tools-a-31895a47",
+ "geo": 0.9529411764705884,
+ "geometry": {
+  "score": 0.9529411764705884,
+  "n": 72,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 28,
+  "stacked": 23,
+  "unique": 44,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5294117647058824
+ },
+ "problems": 0,
+ "n": 72,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 4,
+  "note": "no actual shed structure, just scattered props on open grass with a giant oversized barrel"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.553235294117647,
+ "ms": 15124
+}

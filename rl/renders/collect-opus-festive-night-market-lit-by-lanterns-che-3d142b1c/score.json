@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-festive-night-market-lit-by-lanterns-che-3d142b1c",
+ "geo": 0.9727272727272729,
+ "geometry": {
+  "score": 0.9727272727272729,
+  "n": 78,
+  "overlaps": 0,
+  "coverage": 0.51,
+  "small": 47,
+  "stacked": 41,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7272727272727273
+ },
+ "problems": 1,
+ "n": 78,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 4,
+  "density": 5,
+  "orientation": 4,
+  "note": "no stalls/tents/lanterns lit, just green field with scattered chess tables"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5581818181818182,
+ "ms": 15665
+}

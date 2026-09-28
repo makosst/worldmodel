@@ -1,0 +1,33 @@
+{
+ "id": "train-night-dock-silence-a-single-lamp-glowing-b6a503ba",
+ "geo": 0.9228130360205833,
+ "geometry": {
+  "score": 0.9228130360205833,
+  "n": 53,
+  "overlaps": 3,
+  "coverage": 0.82,
+  "small": 10,
+  "stacked": 6,
+  "unique": 17,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.8867924528301887,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.45454545454545453
+ },
+ "problems": 0,
+ "n": 53,
+ "judge": {
+  "prompt": 2,
+  "realism": 3,
+  "composition": 5,
+  "density": 6,
+  "orientation": 5,
+  "note": "no dock/water, stacked logs not pallets, odd red silo dominates"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5457032590051458,
+ "ms": 14544
+}

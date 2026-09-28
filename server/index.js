@@ -5,12 +5,14 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
 import { selectModels, loadLibrary } from './library.js';
+import { selectEnvironment, TEXTURES_DIR } from './textures.js';
 import { World } from './world.js';
 import { capture } from './capture.js';
 import { systemPrompt } from './prompt.js';
 import { WorldBuilder } from './build.js';
 import { saveWorld, loadWorld, listWorlds, thumbPath } from './store.js';
-import { buildWorldArgs, buildWorldSpec } from './tools.js';
+import { TOOLS, TOOL_BY_ACTION, argsSchema, toolSpecs } from './tools.js';
+import { freeViewpoints } from './views.js';
 
 const PORT = Number(process.env.PORT || 5173);
 const BASE_URL = `http://127.0.0.1:${PORT}`;
@@ -23,10 +25,12 @@ const AGENT_MODEL = process.env.WORLD_AGENT_MODEL || 'sonnet';
 const AGENT_EFFORT = process.env.WORLD_AGENT_EFFORT || 'low';
 const RIVER_PYTHON = process.env.RIVER_PYTHON || path.join(ROOT, '.venv', 'bin', 'python');
 const RIVER_AGENT = path.join(ROOT, 'river', 'agent.py');
+// WORLD_THINKING=off disables model reasoning for every backend (River renderer, Claude Code).
+const THINKING = process.env.WORLD_THINKING !== 'off';
 const WORK_DIR = path.join(os.tmpdir(), 'worldmodel-agent');
 fs.mkdirSync(WORK_DIR, { recursive: true });
 
-const TOOLS = ['build_world'];
+const MAX_TURNS = Number(process.env.WORLD_MAX_TURNS || 30);
 
 const sessions = new Map(); // id -> { id, prompt, world, status, log, clients, proc }
 
@@ -47,16 +51,18 @@ function setStatus(session, status, extra = {}) {
 }
 
 // model: a Claude Code model alias/id (e.g. "sonnet", "opus", "claude-opus-5-5")
-// or "river:<base model>" (e.g. "river:Qwen/Qwen3.8-27B-FP8").
-function agentCommand(model, catalog, id, prompt) {
+// or "river:<base model>" (e.g. "river:Qwen/Qwen3.8-27B-FP8"), optionally with "@river://<checkpoint>"
+// to sample from a trained LoRA checkpoint of that base model.
+function agentCommand(model, catalog, id, prompt, envOptions) {
   if (model.startsWith('river:')) {
     const job = {
       model: model.slice('river:'.length),
-      system: systemPrompt(catalog),
+      system: systemPrompt(catalog, envOptions),
       user: `Build this world: ${prompt}`,
-      tool: buildWorldSpec(),
-      build_url: `${BASE_URL}/internal/${id}/build`,
-      max_turns: 2,
+      tools: toolSpecs(),
+      internal_url: `${BASE_URL}/internal/${id}`,
+      max_turns: MAX_TURNS,
+      thinking: THINKING,
     };
     return { bin: RIVER_PYTHON, args: [RIVER_AGENT], stdin: JSON.stringify(job) };
   }
@@ -75,31 +81,35 @@ function agentCommand(model, catalog, id, prompt) {
     '--verbose',
     '--model', model,
     '--effort', AGENT_EFFORT,
-    '--system-prompt', systemPrompt(catalog),
+    '--system-prompt', systemPrompt(catalog, envOptions),
     '--mcp-config', JSON.stringify(mcpConfig),
     '--strict-mcp-config',
     '--setting-sources', '',
     '--tools', '',
-    '--allowedTools', TOOLS.map((t) => `mcp__world__${t}`).join(','),
+    '--allowedTools', TOOLS.map((t) => `mcp__world__${t.name}`).join(','),
     '--no-session-persistence',
-    '--max-turns', '2', // single shot: the build_world call, then a one-line summary
+    '--max-turns', String(MAX_TURNS), // multi-shot: place, capture, fix, finish
   ];
   return { bin: CLAUDE_BIN, args, stdin: `Build this world: ${prompt}` };
 }
 
 async function startSession(prompt, model = AGENT_MODEL) {
   const startedAt = Date.now();
-  const picked = await selectModels(prompt); // only models close to the prompt are offered
+  // Only models, ground textures and skies close to the prompt are offered.
+  const [picked, envOptions] = await Promise.all([selectModels(prompt), selectEnvironment(prompt)]);
   const catalog = picked.catalog;
   const id = randomUUID();
-  const world = new World(catalog);
-  const session = { id, prompt, world, status: 'starting', log: [], clients: new Set(), proc: null, startedAt, agentModel: model, requestedModel: model, selection: picked.selection };
+  const world = new World(catalog, envOptions);
+  const session = { id, prompt, world, status: 'starting', log: [], clients: new Set(), proc: null, startedAt, agentModel: model, requestedModel: model, selection: picked.selection, captures: 0, toolCalls: 0 };
   session.builder = new WorldBuilder(world);
   world.listeners.add((e) => broadcast(session, e));
   sessions.set(id, session);
 
-  const cmd = agentCommand(model, catalog, id, prompt);
-  const proc = spawn(cmd.bin, cmd.args, { cwd: WORK_DIR, env: process.env, stdio: ['pipe', 'pipe', 'pipe'] });
+  const cmd = agentCommand(model, catalog, id, prompt, envOptions);
+  // Exact agent input, kept with the saved world (used to build fine-tuning data).
+  session.agentInput = { system: systemPrompt(catalog, envOptions), user: `Build this world: ${prompt}` };
+  const env = THINKING ? process.env : { ...process.env, MAX_THINKING_TOKENS: '0' };
+  const proc = spawn(cmd.bin, cmd.args, { cwd: WORK_DIR, env, stdio: ['pipe', 'pipe', 'pipe'] });
   session.proc = proc;
   proc.stdin.end(cmd.stdin);
   setStatus(session, 'generating');
@@ -139,6 +149,9 @@ async function startSession(prompt, model = AGENT_MODEL) {
 
 async function persist(session) {
   if (!session.world.objects.size) return;
+  // Agents can't always see that the spawn is blocked; move it to the nearest clear spot.
+  const moved = session.world.fixSpawn();
+  if (moved) session.builder.problems.push(moved);
   const snapshot = session.world.snapshot();
   const [thumb] = await capture(BASE_URL, snapshot, ['player']);
   const record = {
@@ -153,8 +166,12 @@ async function persist(session) {
     cost: session.result?.cost ?? null,
     problems: session.builder.problems,
     turns: session.result?.turns ?? null,
+    toolCalls: session.toolCalls,
+    captures: session.captures,
+    finished: !!session.finished,
     apiMs: session.result?.apiMs ?? null,
     selection: session.selection,
+    agentInput: session.agentInput,
     outputTokens: session.result?.outputTokens ?? null,
     world: snapshot,
   };
@@ -233,16 +250,51 @@ async function readBody(req) {
   return data ? JSON.parse(data) : {};
 }
 
+const CAPTURE_VIEWS = ['top', 'overview', 'eye', 'eye'];
+
 async function handleInternal(session, action, body) {
-  if (action !== 'build') throw new Error(`unknown action ${action}`);
-  if (session.built) throw new Error('The world was already built; it is final.');
+  const tool = TOOL_BY_ACTION[action];
+  if (!tool) throw new Error(`unknown action ${action}`);
   // The MCP server validates Claude's arguments; validate here too so every backend gets the same checks.
-  const parsed = buildWorldArgs.safeParse(body);
-  if (!parsed.success) throw new Error(`Invalid build_world arguments: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
-  session.built = true;
-  const result = session.builder.build(parsed.data);
-  for (const p of result.problems) log(session, { kind: 'tool_error', text: p });
-  return result;
+  const parsed = argsSchema(tool).safeParse(body);
+  if (!parsed.success) throw new Error(`Invalid ${tool.name} arguments: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+  const args = parsed.data;
+  session.toolCalls++;
+  const { world, builder } = session;
+
+  if (action === 'place') {
+    const r = builder.place(args);
+    if (r.placed.length) session.built = true;
+    for (const p of r.problems) log(session, { kind: 'tool_error', text: p });
+    const text =
+      `Placed ${r.placed.length} object(s): ${r.placed.map((p) => `#${p.id} ${p.model}`).join(', ') || 'none'}. ` +
+      `World now has ${r.total} objects.` + (r.problems.length ? `\nProblems: ${r.problems.join('; ')}` : '');
+    return { ...r, text };
+  }
+  if (action === 'move') {
+    const r = builder.move(args);
+    return { ...r, text: `Moved #${r.moved}.` + (r.overlaps.length ? ` Overlaps: ${r.overlaps.join('; ')}` : '') };
+  }
+  if (action === 'remove') {
+    const r = builder.remove(args);
+    return { ...r, text: `Removed ${r.removed.length} object(s).${r.missing.length ? ` Not found: ${r.missing.join(', ')}.` : ''} World now has ${r.total} objects.` };
+  }
+  if (action === 'capture') {
+    session.captures++;
+    const wanted = args.views?.length ? args.views : CAPTURE_VIEWS;
+    const eyes = freeViewpoints(world, wanted.filter((v) => v === 'eye').length);
+    const views = wanted.filter((v) => v !== 'eye').concat(eyes);
+    const shots = await capture(BASE_URL, world.snapshot(), views);
+    const label = (v) => (typeof v === 'string' ? v : `eye-level view from (x ${v.x}, z ${v.z})`);
+    return {
+      text: `Images in order: ${shots.map((s) => label(s.view)).join('; ')}.\n${world.describe()}`,
+      images: shots.map((s) => ({ label: label(s.view), data: s.data })),
+    };
+  }
+  if (action === 'finish') {
+    session.finished = true;
+    return { text: 'Finished. Reply with one short sentence describing the world.' };
+  }
 }
 
 const server = http.createServer(async (req, res) => {
@@ -252,7 +304,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'POST' && p === '/api/generate') {
       const { prompt, replaces, model } = await readBody(req);
       if (!prompt?.trim()) return json(res, 400, { error: 'prompt required' });
-      if (model != null && (typeof model !== 'string' || !/^(river:)?[\w./:-]+$/.test(model))) return json(res, 400, { error: 'invalid model' });
+      if (model != null && (typeof model !== 'string' || !/^(river:[\w./:-]+(@river:\/\/[\w./-]+)?|[\w./:-]+)$/.test(model))) return json(res, 400, { error: 'invalid model' });
       sessions.get(replaces)?.proc?.kill('SIGTERM'); // the tab moved on to a new world
       const session = await startSession(prompt.trim().slice(0, 2000), model || AGENT_MODEL);
       return json(res, 200, { id: session.id });
@@ -294,7 +346,17 @@ const server = http.createServer(async (req, res) => {
     if ((m = p.match(/^\/api\/worlds\/([\w-]+)\.jpg$/))) return sendFile(res, thumbPath(m[1]) || '');
     if (p.startsWith('/vendor/three/')) return serveFrom(res, THREE_DIR, p.slice('/vendor/three/'.length));
     if (p.startsWith('/library/')) return serveFrom(res, loadLibrary().root, p.slice('/library/'.length));
+    if (p.startsWith('/textures/')) return serveFrom(res, TEXTURES_DIR, p.slice('/textures/'.length));
     if (p.startsWith('/models/')) return serveFrom(res, LEGACY_MODELS_DIR, p.slice('/models/'.length));
+    if (p === '/benchmark') return sendFile(res, path.join(PUBLIC_DIR, 'benchmark.html'));
+    if (p === '/api/benchmark') {
+      // Judged comparison written by bench/analyze.mjs, joined with the saved worlds.
+      const scored = JSON.parse(fs.readFileSync(path.join(ROOT, 'bench', 'results', 'lowpoly.scored.json'), 'utf8'));
+      return json(res, 200, scored.map((r) => {
+        const w = loadWorld(r.id) || {};
+        return { ...r, durationMs: w.durationMs, objectCount: w.objectCount, turns: w.turns, requestedModel: w.requestedModel };
+      }));
+    }
     if (p === '/') return sendFile(res, path.join(PUBLIC_DIR, 'index.html'));
     return serveFrom(res, PUBLIC_DIR, p.slice(1));
   } catch (e) {

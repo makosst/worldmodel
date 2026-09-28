@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-market-alley-crowded-with-crates-ba-66f2d1e9",
+ "geo": 0.947878787878788,
+ "geometry": {
+  "score": 0.947878787878788,
+  "n": 85,
+  "overlaps": 0,
+  "coverage": 0.43,
+  "small": 41,
+  "stacked": 32,
+  "unique": 39,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.9555555555555555,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5454545454545454
+ },
+ "problems": 1,
+ "n": 85,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 5,
+  "note": "no alley/stalls, just scattered props in open yard with floating items"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5369696969696971,
+ "ms": 17131
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-night-shed-lit-by-a-single-bulb-trowel-a-0f3c5c4c",
+ "geo": 0.9446258503401362,
+ "geometry": {
+  "score": 0.9446258503401362,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.29,
+  "small": 49,
+  "stacked": 24,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6444444444444444,
+  "c_stacking": 0.9795918367346939,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 1,
+ "n": 63,
+ "judge": {
+  "prompt": 1,
+  "realism": 1,
+  "composition": 1,
+  "density": 3,
+  "orientation": 1,
+  "note": "no shed/walls built at all, just random furniture scattered on open grass"
+ },
+ "judgeScore": 0.14,
+ "reward": 0.34115646258503407,
+ "ms": 51720
+}

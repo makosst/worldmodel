@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-shed-interior-warmed-by-lantern-lig-c40d7990",
+ "geo": 0.9366666666666668,
+ "geometry": {
+  "score": 0.9366666666666668,
+  "n": 66,
+  "overlaps": 0,
+  "coverage": 0.29,
+  "small": 35,
+  "stacked": 27,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6444444444444444,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9
+ },
+ "problems": 1,
+ "n": 66,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no enclosed shed interior; it's an open fenced yard, no roof/walls or floor, no lantern/gloves recognizable"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4441666666666667,
+ "ms": 21435
+}

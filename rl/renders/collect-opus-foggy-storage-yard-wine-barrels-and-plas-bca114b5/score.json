@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-storage-yard-wine-barrels-and-plas-bca114b5",
+ "geo": 0.9794871794871796,
+ "geometry": {
+  "score": 0.9794871794871796,
+  "n": 87,
+  "overlaps": 0,
+  "coverage": 0.55,
+  "small": 32,
+  "stacked": 22,
+  "unique": 41,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7948717948717948
+ },
+ "problems": 1,
+ "n": 87,
+ "judge": {
+  "prompt": 5,
+  "realism": 2,
+  "composition": 4,
+  "density": 5,
+  "orientation": 4,
+  "note": "no fog/mist at all, bright clear sky, plus incongruous boats"
+ },
+ "judgeScore": 0.4,
+ "reward": 0.5448717948717949,
+ "ms": 28133
+}

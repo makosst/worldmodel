@@ -1,0 +1,33 @@
+{
+ "id": "train-night-garage-lit-by-a-caged-lamp-tools-s-bed55f88",
+ "geo": 0.9941176470588237,
+ "geometry": {
+  "score": 0.9941176470588237,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.45,
+  "small": 27,
+  "stacked": 25,
+  "unique": 44,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9411764705882353
+ },
+ "problems": 0,
+ "n": 61,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 3,
+  "orientation": 2,
+  "note": "no garage walls/roof—open platform with floating props, not an enclosed space"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.44352941176470595,
+ "ms": 58400
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-small-construction-site-cement-bags-stac-dde91b4a",
+ "geo": 0.8910042735042737,
+ "geometry": {
+  "score": 0.8910042735042737,
+  "n": 78,
+  "overlaps": 0,
+  "coverage": 0.69,
+  "small": 0,
+  "stacked": 0,
+  "unique": 11,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.3,
+  "c_variety": 0.4700854700854701,
+  "c_orientation": 0.875
+ },
+ "problems": 0,
+ "n": 78,
+ "judge": {
+  "prompt": 7,
+  "realism": 4,
+  "composition": 3,
+  "density": 7,
+  "orientation": 4,
+  "note": "cement bags and ladders scattered randomly across whole site instead of grouped together"
+ },
+ "judgeScore": 0.5,
+ "reward": 0.5977510683760684,
+ "ms": 38592
+}

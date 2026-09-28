@@ -1,0 +1,33 @@
+{
+ "id": "train-cozy-picnic-spot-a-wicker-basket-and-woo-56c57b01",
+ "geo": 0.9421052631578949,
+ "geometry": {
+  "score": 0.9421052631578949,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.68,
+  "small": 32,
+  "stacked": 21,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.42105263157894735
+ },
+ "problems": 0,
+ "n": 59,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 5,
+  "orientation": 2,
+  "note": "random clutter (car cover, boulders, fence panels) instead of a cohesive picnic scene"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.44552631578947377,
+ "ms": 39915
+}

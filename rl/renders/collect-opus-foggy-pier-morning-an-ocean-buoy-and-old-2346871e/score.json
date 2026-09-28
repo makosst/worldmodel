@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-pier-morning-an-ocean-buoy-and-old-2346871e",
+ "geo": 0.951424287856072,
+ "geometry": {
+  "score": 0.951424287856072,
+  "n": 58,
+  "overlaps": 2,
+  "coverage": 0.64,
+  "small": 26,
+  "stacked": 13,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9310344827586207,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6521739130434783
+ },
+ "problems": 1,
+ "n": 58,
+ "judge": {
+  "prompt": 3,
+  "realism": 1,
+  "composition": 2,
+  "density": 4,
+  "orientation": 2,
+  "note": "no water/pier/fog; giant buoy clips through grass ground"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.41785607196401797,
+ "ms": 43254
+}

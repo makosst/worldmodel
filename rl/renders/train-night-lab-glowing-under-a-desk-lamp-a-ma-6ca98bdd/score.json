@@ -1,0 +1,33 @@
+{
+ "id": "train-night-lab-glowing-under-a-desk-lamp-a-ma-6ca98bdd",
+ "geo": 0.936969696969697,
+ "geometry": {
+  "score": 0.936969696969697,
+  "n": 50,
+  "overlaps": 0,
+  "coverage": 0.37,
+  "small": 28,
+  "stacked": 25,
+  "unique": 28,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8222222222222222,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6363636363636364
+ },
+ "problems": 0,
+ "n": 50,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 4,
+  "note": "outdoor scattered layout with no walls/room, sparse benches, lacks enclosed glowing desk-lamp lab feel"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.48924242424242426,
+ "ms": 42265
+}

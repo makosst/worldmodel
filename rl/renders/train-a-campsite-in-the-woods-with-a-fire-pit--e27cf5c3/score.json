@@ -1,0 +1,33 @@
+{
+ "id": "train-a-campsite-in-the-woods-with-a-fire-pit--e27cf5c3",
+ "geo": 0.8490746096009254,
+ "geometry": {
+  "score": 0.8490746096009254,
+  "n": 52,
+  "overlaps": 1,
+  "coverage": 0.78,
+  "small": 19,
+  "stacked": 2,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9615384615384616,
+  "c_coverage": 1,
+  "c_stacking": 0.21052631578947367,
+  "c_variety": 1,
+  "c_orientation": 0.35714285714285715
+ },
+ "problems": 0,
+ "n": 52,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 2,
+  "note": "no trees/forest, looks like scattered junk not a campsite around the fire pit"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.40726865240023136,
+ "ms": 19994
+}

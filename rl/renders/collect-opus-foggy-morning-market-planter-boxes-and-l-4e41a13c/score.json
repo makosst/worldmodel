@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-foggy-morning-market-planter-boxes-and-l-4e41a13c",
+ "geo": 0.9801807228915663,
+ "geometry": {
+  "score": 0.9801807228915663,
+  "n": 83,
+  "overlaps": 1,
+  "coverage": 0.53,
+  "small": 54,
+  "stacked": 49,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9759036144578314,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.85
+ },
+ "problems": 1,
+ "n": 83,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "scattered random props on empty grass, no market stall/table grouping, no fog, no lemons visible"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.5000451807228916,
+ "ms": 7819
+}

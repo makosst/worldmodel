@@ -1,0 +1,33 @@
+{
+ "id": "train-cluttered-small-office-metal-desk-piled--2d06dbef",
+ "geo": 0.9723076923076924,
+ "geometry": {
+  "score": 0.9723076923076924,
+  "n": 57,
+  "overlaps": 0,
+  "coverage": 0.39,
+  "small": 37,
+  "stacked": 35,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8666666666666667,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9230769230769231
+ },
+ "problems": 0,
+ "n": 57,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "sparse scattered furniture on huge empty gray floor, no walls/cubicles, chalkboard is a sidewalk A-frame not office board"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4980769230769231,
+ "ms": 15032
+}

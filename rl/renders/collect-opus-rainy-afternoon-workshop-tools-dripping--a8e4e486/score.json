@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-afternoon-workshop-tools-dripping--a8e4e486",
+ "geo": 0.9618181818181819,
+ "geometry": {
+  "score": 0.9618181818181819,
+  "n": 60,
+  "overlaps": 0,
+  "coverage": 0.39,
+  "small": 32,
+  "stacked": 27,
+  "unique": 41,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8666666666666667,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8181818181818182
+ },
+ "problems": 1,
+ "n": 60,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 4,
+  "density": 3,
+  "orientation": 4,
+  "note": "open grass field, no rain/dripping, no wrench/crowbar visible, no enclosure"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.5104545454545455,
+ "ms": 19611
+}

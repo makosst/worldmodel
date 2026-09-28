@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-garden-morning-the-sprinkler-still-c404ae85",
+ "geo": 0.9598484848484851,
+ "geometry": {
+  "score": 0.9598484848484851,
+  "n": 75,
+  "overlaps": 0,
+  "coverage": 0.52,
+  "small": 40,
+  "stacked": 15,
+  "unique": 28,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.75,
+  "c_variety": 1,
+  "c_orientation": 0.8484848484848485
+ },
+ "problems": 0,
+ "n": 75,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 2,
+  "density": 2,
+  "orientation": 4,
+  "note": "no sprinkler/dandelions, mostly empty lawn with scattered plants and stray chain-link fence"
+ },
+ "judgeScore": 0.28,
+ "reward": 0.4499621212121213,
+ "ms": 13162
+}

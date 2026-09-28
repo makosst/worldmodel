@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cluttered-small-lab-a-bunsen-burner-besi-29b3421d",
+ "geo": 0.8835007610350076,
+ "geometry": {
+  "score": 0.8835007610350076,
+  "n": 73,
+  "overlaps": 0,
+  "coverage": 0.24,
+  "small": 54,
+  "stacked": 46,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.5333333333333333,
+  "c_stacking": 1,
+  "c_variety": 0.958904109589041,
+  "c_orientation": 0.5555555555555556
+ },
+ "problems": 0,
+ "n": 73,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "generic crates/shelves instead of chemistry set, beakers, or bunsen burner; huge empty floor"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4608751902587519,
+ "ms": 8586
+}

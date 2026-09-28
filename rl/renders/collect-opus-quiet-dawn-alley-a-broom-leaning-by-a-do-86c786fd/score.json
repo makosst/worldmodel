@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-quiet-dawn-alley-a-broom-leaning-by-a-do-86c786fd",
+ "geo": 0.9534050179211471,
+ "geometry": {
+  "score": 0.9534050179211471,
+  "n": 55,
+  "overlaps": 0,
+  "coverage": 0.51,
+  "small": 18,
+  "stacked": 8,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.8888888888888888,
+  "c_variety": 1,
+  "c_orientation": 0.6451612903225806
+ },
+ "problems": 1,
+ "n": 55,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no enclosed alley, doors far from barrels, no visible broom, bright cartoon daylight not dawn"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.46335125448028674,
+ "ms": 20306
+}

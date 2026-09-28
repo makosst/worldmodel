@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-construction-site-rusted-tools-8ac378c8",
+ "geo": 0.9653846153846155,
+ "geometry": {
+  "score": 0.9653846153846155,
+  "n": 85,
+  "overlaps": 0,
+  "coverage": 0.59,
+  "small": 41,
+  "stacked": 21,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6538461538461539
+ },
+ "problems": 0,
+ "n": 85,
+ "judge": {
+  "prompt": 7,
+  "realism": 4,
+  "composition": 4,
+  "density": 5,
+  "orientation": 4,
+  "note": "chain-link fence panels tilted/leaning unnaturally like falling walls"
+ },
+ "judgeScore": 0.48,
+ "reward": 0.6013461538461539,
+ "ms": 42617
+}

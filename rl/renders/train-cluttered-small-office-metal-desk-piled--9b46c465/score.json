@@ -1,0 +1,33 @@
+{
+ "id": "train-cluttered-small-office-metal-desk-piled--9b46c465",
+ "geo": 0.9500000000000001,
+ "geometry": {
+  "score": 0.9500000000000001,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.3,
+  "small": 46,
+  "stacked": 43,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6666666666666666,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 0,
+ "n": 63,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 2,
+  "note": "no walls/clutter, bare desks with no notepads, furniture scattered with no wall alignment"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4325,
+ "ms": 11397
+}

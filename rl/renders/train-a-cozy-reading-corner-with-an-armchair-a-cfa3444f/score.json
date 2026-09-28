@@ -1,0 +1,33 @@
+{
+ "id": "train-a-cozy-reading-corner-with-an-armchair-a-cfa3444f",
+ "geo": 0.9950000000000001,
+ "geometry": {
+  "score": 0.9950000000000001,
+  "n": 66,
+  "overlaps": 0,
+  "coverage": 0.45,
+  "small": 32,
+  "stacked": 26,
+  "unique": 38,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.95
+ },
+ "problems": 0,
+ "n": 66,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 2,
+  "density": 6,
+  "orientation": 3,
+  "note": "scattered clutter across whole floor, not a cohesive corner; street lamp instead of reading lamp, no walls/floor context"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5337500000000001,
+ "ms": 51526
+}

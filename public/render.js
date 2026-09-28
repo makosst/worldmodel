@@ -11,7 +11,7 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 document.body.appendChild(renderer.domElement);
 
-const world = new World({ animate: false });
+const world = new World({ animate: false, renderer });
 const labels = document.getElementById('labels');
 
 const grid = new THREE.GridHelper(SIZE, SIZE, 0x222222, 0x222222);
@@ -30,6 +30,14 @@ function perspective(from, target = C) {
 }
 
 function cameraFor(view, snapshot) {
+  // { type: 'eye', x, z, y?, look_at_x, look_at_z }: a person standing at (x, z) looking at a point.
+  if (view && typeof view === 'object' && view.type === 'eye') {
+    const cam = new THREE.PerspectiveCamera(70, W / H, 0.05, 200);
+    const y = view.y ?? 1.6;
+    cam.position.set(view.x, y, view.z);
+    cam.lookAt(view.look_at_x ?? SIZE / 2, y * 0.55, view.look_at_z ?? SIZE / 2);
+    return cam;
+  }
   switch (view) {
     case 'top': {
       const pad = 0.9;

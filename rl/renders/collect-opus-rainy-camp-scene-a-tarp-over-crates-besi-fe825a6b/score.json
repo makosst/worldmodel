@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-camp-scene-a-tarp-over-crates-besi-fe825a6b",
+ "geo": 0.9952380952380954,
+ "geometry": {
+  "score": 0.9952380952380954,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 32,
+  "stacked": 16,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9523809523809523
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 3,
+  "realism": 4,
+  "composition": 4,
+  "density": 5,
+  "orientation": 3,
+  "note": "tarp is a vertical camo-net wall, not draped over crates, and no fire pit, smoke, rain, or wet ground visible"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5338095238095238,
+ "ms": 22086
+}

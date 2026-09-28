@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-camp-morning-a-tea-set-and-thermos--77407127",
+ "geo": 0.9823529411764708,
+ "geometry": {
+  "score": 0.9823529411764708,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.5,
+  "small": 44,
+  "stacked": 35,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8235294117647058
+ },
+ "problems": 1,
+ "n": 63,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 4,
+  "note": "indoor furniture (bed/sofa) scattered outdoors, no tent/campfire, no cohesive camp cluster"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5305882352941177,
+ "ms": 22854
+}

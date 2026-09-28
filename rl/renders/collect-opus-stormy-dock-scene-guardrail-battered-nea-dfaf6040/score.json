@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-stormy-dock-scene-guardrail-battered-nea-dfaf6040",
+ "geo": 0.9365430346051464,
+ "geometry": {
+  "score": 0.9365430346051464,
+  "n": 49,
+  "overlaps": 2,
+  "coverage": 0.69,
+  "small": 11,
+  "stacked": 11,
+  "unique": 19,
+  "c_density": 0.98,
+  "c_validity": 0.98,
+  "c_overlap": 0.9183673469387755,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6086956521739131
+ },
+ "problems": 2,
+ "n": 49,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "no dock/guardrail structure, ground is grass not water/pier, cannons/oversized buoy replace requested elements"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4291357586512866,
+ "ms": 14357
+}

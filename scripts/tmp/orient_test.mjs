@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import { World } from '../../server/world.js';
+import { capture } from '../../server/capture.js';
+const lib = JSON.parse(fs.readFileSync('data/library/index.json', 'utf8'));
+const cat = {};
+for (const m of lib.models) cat[m.id] = { name: m.id, url: `/library/${m.file.split('/').map(encodeURIComponent).join('/')}`, pivot: m.pivot, nodes: m.nodes, yaw: m.yaw, scale: m.scale, localSize: m.localSize, size: m.localSize.map((v) => v * m.scale) };
+const w = new World(cat);
+const row1 = ['lazytextures/Chair01', 'polyhaven/ArmChair_01', 'polyhaven/bar_chair_round_01', 'polyhaven/sofa_02', 'polyhaven/GothicCabinet_01'];
+const row2 = ['polyhaven/gaming_console', 'polyhaven/gothic_statue', 'polyhaven/garden_gnome', 'polyhaven/boombox', 'polyhaven/cleaner_tin_01', 'polyhaven/metal_office_desk'];
+const rot = Number(process.argv[2] || 0);
+row1.forEach((id, i) => w.place({ model: id, x: 1.2 + i * 1.9, z: 4, rotation: rot }));
+row2.forEach((id, i) => w.place({ model: id, x: 0.9 + i * 1.6, z: 7, rotation: rot }));
+const imgs = await capture('http://127.0.0.1:5173', w.snapshot(), [process.argv[3] || 'south', 'top']);
+for (const im of imgs) fs.writeFileSync(`/private/tmp/claude-501/-Users-makosst-dev-worldmodel/f306e6f6-7dbb-4e44-8808-427f30fca738/scratchpad/shots/orient_r${rot}_${typeof im.view === 'string' ? im.view : 'eye'}.jpg`, Buffer.from(im.data, 'base64'));
+for (const o of w.objects.values()) if (o.yaw) console.log(o.model, 'yaw', o.yaw, 'extent', JSON.stringify(o.extent));
+process.exit(0);

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-quiet-closed-market-stand-crates-and-a-c-9c073bc5",
+ "geo": 0.9475000000000001,
+ "geometry": {
+  "score": 0.9475000000000001,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.38,
+  "small": 36,
+  "stacked": 29,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7083333333333334
+ },
+ "problems": 1,
+ "n": 63,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 4,
+  "density": 4,
+  "orientation": 5,
+  "note": "stalls reduced to a thin backdrop row on bare green field, no stand structure or walkway"
+ },
+ "judgeScore": 0.46,
+ "reward": 0.581875,
+ "ms": 32793
+}

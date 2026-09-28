@@ -1,0 +1,33 @@
+{
+ "id": "train-a-wooden-harbor-pier-with-crates-barrels-db21e82e",
+ "geo": 0.9170000000000001,
+ "geometry": {
+  "score": 0.9170000000000001,
+  "n": 50,
+  "overlaps": 1,
+  "coverage": 0.62,
+  "small": 16,
+  "stacked": 10,
+  "unique": 30,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.96,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.25
+ },
+ "problems": 0,
+ "n": 50,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no boardwalk/pier deck or boat; giant oversized buoy tower, items dumped in one corner"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.48425000000000007,
+ "ms": 41639
+}

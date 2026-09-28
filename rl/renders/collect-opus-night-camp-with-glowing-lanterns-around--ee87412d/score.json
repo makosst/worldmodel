@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-night-camp-with-glowing-lanterns-around--ee87412d",
+ "geo": 0.9633484162895929,
+ "geometry": {
+  "score": 0.9633484162895929,
+  "n": 56,
+  "overlaps": 0,
+  "coverage": 0.47,
+  "small": 34,
+  "stacked": 16,
+  "unique": 28,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.9411764705882353,
+  "c_variety": 1,
+  "c_orientation": 0.6923076923076923
+ },
+ "problems": 1,
+ "n": 56,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 7,
+  "orientation": 4,
+  "note": "random bed/dresser/sofa/fence assets, no real tree stumps, no seating ring around firepit"
+ },
+ "judgeScore": 0.44,
+ "reward": 0.5708371040723983,
+ "ms": 28936
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-dock-creaking-softly-rusted-fi-8a15be53",
+ "geo": 0.9526315789473685,
+ "geometry": {
+  "score": 0.9526315789473685,
+  "n": 55,
+  "overlaps": 0,
+  "coverage": 0.65,
+  "small": 26,
+  "stacked": 20,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5263157894736842
+ },
+ "problems": 1,
+ "n": 55,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "no dock/planks/water at all, just scattered barrels and poles on flat grass"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.43315789473684213,
+ "ms": 12384
+}

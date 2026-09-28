@@ -1,0 +1,33 @@
+{
+ "id": "train-busy-workshop-at-midday-welding-sparks-n-c72bfb91",
+ "geo": 0.9866666666666668,
+ "geometry": {
+  "score": 0.9866666666666668,
+  "n": 67,
+  "overlaps": 0,
+  "coverage": 0.59,
+  "small": 40,
+  "stacked": 40,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8666666666666667
+ },
+ "problems": 0,
+ "n": 67,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "oversized floating lamps, no walls/enclosure, no bolt cutters or sparks"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.5016666666666667,
+ "ms": 29140
+}

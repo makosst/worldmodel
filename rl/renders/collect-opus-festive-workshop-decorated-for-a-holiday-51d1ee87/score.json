@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-festive-workshop-decorated-for-a-holiday-51d1ee87",
+ "geo": 0.9215686274509806,
+ "geometry": {
+  "score": 0.9215686274509806,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.25,
+  "small": 30,
+  "stacked": 28,
+  "unique": 18,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.5555555555555556,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8823529411764706
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 2,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no lanterns/lights or holiday decor at all, just scattered crates on bare field with no workshop structure"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.45539215686274515,
+ "ms": 49717
+}

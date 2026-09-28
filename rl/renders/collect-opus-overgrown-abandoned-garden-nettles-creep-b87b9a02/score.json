@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-overgrown-abandoned-garden-nettles-creep-b87b9a02",
+ "geo": 0.9497270471464021,
+ "geometry": {
+  "score": 0.9497270471464021,
+  "n": 88,
+  "overlaps": 0,
+  "coverage": 0.39,
+  "small": 62,
+  "stacked": 24,
+  "unique": 37,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8666666666666667,
+  "c_stacking": 0.7741935483870968,
+  "c_variety": 1,
+  "c_orientation": 0.9230769230769231
+ },
+ "problems": 1,
+ "n": 88,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 5,
+  "note": "pristine mowed lawn, no nettles/overgrowth, sparse scattered pots instead of dense creeping vegetation"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.4774317617866005,
+ "ms": 15373
+}

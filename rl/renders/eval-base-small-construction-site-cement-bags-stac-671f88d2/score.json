@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-small-construction-site-cement-bags-stac-671f88d2",
+ "geo": 0.8844067796610171,
+ "geometry": {
+  "score": 0.8844067796610171,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.61,
+  "small": 0,
+  "stacked": 0,
+  "unique": 11,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.3,
+  "c_variety": 0.6214689265536724,
+  "c_orientation": 0.7333333333333333
+ },
+ "problems": 0,
+ "n": 59,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 4,
+  "density": 5,
+  "orientation": 3,
+  "note": "cement bags/ladder present but no walls/structure, ground bare, tarp/panels look like fence not construction walls"
+ },
+ "judgeScore": 0.42,
+ "reward": 0.5361016949152543,
+ "ms": 10780
+}

@@ -1,0 +1,33 @@
+{
+ "id": "train-night-garage-lit-by-a-caged-lamp-tools-s-177000db",
+ "geo": 0.9228205128205128,
+ "geometry": {
+  "score": 0.9228205128205128,
+  "n": 52,
+  "overlaps": 2,
+  "coverage": 0.38,
+  "small": 25,
+  "stacked": 20,
+  "unique": 36,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9230769230769231,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6153846153846154
+ },
+ "problems": 0,
+ "n": 52,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 2,
+  "orientation": 3,
+  "note": "no garage walls/enclosure, no caged lamp, props float above ground and are sparse"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4257051282051282,
+ "ms": 37810
+}

@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-shed-morning-gardener-grabbing-a-wa-26213dfc",
+ "geo": 0.962608695652174,
+ "geometry": {
+  "score": 0.962608695652174,
+  "n": 64,
+  "overlaps": 0,
+  "coverage": 0.39,
+  "small": 42,
+  "stacked": 32,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8666666666666667,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8260869565217391
+ },
+ "problems": 1,
+ "n": 64,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "no shed structure, just scattered tables/fences/pots on bare grass, no gardener or watering can visible"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.4206521739130435,
+ "ms": 40061
+}

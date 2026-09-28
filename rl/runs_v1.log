@@ -1,0 +1,4 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"batch": 1, "reward/mean": 0.0, "train/updated": 0.0, "train/batch_seconds": 274.20976191712543, "truncated/generated_tokens": 0.125, "reward/zero_variance_group_frac": 1.0}
+EVAL {"eval_step": 0, "t": 1790550471.310323, "reward_mean": 0.0, "reward_std": 0.0, "generated_tokens_mean": 23546.647058823528, "truncated_frac": 1.0}

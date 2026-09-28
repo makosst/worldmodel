@@ -1,0 +1,33 @@
+{
+ "id": "train-night-lab-glowing-under-a-desk-lamp-a-ma-648c6743",
+ "geo": 0.9612820512820515,
+ "geometry": {
+  "score": 0.9612820512820515,
+  "n": 66,
+  "overlaps": 0,
+  "coverage": 0.38,
+  "small": 35,
+  "stacked": 34,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8461538461538461
+ },
+ "problems": 0,
+ "n": 66,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 3,
+  "note": "looks like scattered pendulum/lamppost props on open ground, no walls/desk/lamp glow or magnifying glass visible"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4353205128205129,
+ "ms": 60852
+}

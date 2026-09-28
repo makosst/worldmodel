@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-camp-clearing-a-wooden-bucket-and--e8afbda0",
+ "geo": 0.9064615384615387,
+ "geometry": {
+  "score": 0.9064615384615387,
+  "n": 51,
+  "overlaps": 0,
+  "coverage": 0.57,
+  "small": 26,
+  "stacked": 5,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.38461538461538464,
+  "c_variety": 1,
+  "c_orientation": 0.68
+ },
+ "problems": 1,
+ "n": 51,
+ "judge": {
+  "prompt": 6,
+  "realism": 4,
+  "composition": 3,
+  "density": 5,
+  "orientation": 4,
+  "note": "flat green void with random scatter, oversized buckets, no real fire pit clearing or path structure"
+ },
+ "judgeScore": 0.44,
+ "reward": 0.5566153846153847,
+ "ms": 20211
+}

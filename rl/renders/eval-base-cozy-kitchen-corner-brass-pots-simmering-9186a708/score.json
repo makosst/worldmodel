@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cozy-kitchen-corner-brass-pots-simmering-9186a708",
+ "geo": 0.8951185292694727,
+ "geometry": {
+  "score": 0.8951185292694727,
+  "n": 52,
+  "overlaps": 2,
+  "coverage": 0.24,
+  "small": 37,
+  "stacked": 35,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 0.9811320754716981,
+  "c_overlap": 0.9230769230769231,
+  "c_coverage": 0.5333333333333333,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8333333333333334
+ },
+ "problems": 1,
+ "n": 52,
+ "judge": {
+  "prompt": 2,
+  "realism": 2,
+  "composition": 2,
+  "density": 2,
+  "orientation": 2,
+  "note": "vast empty ground with scattered generic low-poly furniture, no recognizable brass pots or cutting board, no kitchen structure/walls"
+ },
+ "judgeScore": 0.2,
+ "reward": 0.3737796323173682,
+ "ms": 14296
+}

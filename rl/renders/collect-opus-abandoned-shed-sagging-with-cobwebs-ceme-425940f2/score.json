@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-abandoned-shed-sagging-with-cobwebs-ceme-425940f2",
+ "geo": 0.9600000000000002,
+ "geometry": {
+  "score": 0.9600000000000002,
+  "n": 65,
+  "overlaps": 0,
+  "coverage": 0.45,
+  "small": 27,
+  "stacked": 16,
+  "unique": 39,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6
+ },
+ "problems": 0,
+ "n": 65,
+ "judge": {
+  "prompt": 6,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 2,
+  "note": "no shed structure at all, just scattered furniture on open ground"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5250000000000001,
+ "ms": 20646
+}

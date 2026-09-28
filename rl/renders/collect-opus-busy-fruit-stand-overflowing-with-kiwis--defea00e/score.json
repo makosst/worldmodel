@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-fruit-stand-overflowing-with-kiwis--defea00e",
+ "geo": 0.8962745098039216,
+ "geometry": {
+  "score": 0.8962745098039216,
+  "n": 64,
+  "overlaps": 0,
+  "coverage": 0.77,
+  "small": 51,
+  "stacked": 36,
+  "unique": 23,
+  "c_density": 1,
+  "c_validity": 0.7529411764705882,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.3333333333333333
+ },
+ "problems": 22,
+ "n": 64,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 5,
+  "orientation": 3,
+  "note": "no actual stand/stall structure, just scattered generic crates/baskets, no clear kiwis/pomegranates"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.49406862745098046,
+ "ms": 16207
+}

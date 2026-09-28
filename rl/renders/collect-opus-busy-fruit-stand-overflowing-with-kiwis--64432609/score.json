@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-busy-fruit-stand-overflowing-with-kiwis--64432609",
+ "geo": 0.9270085470085471,
+ "geometry": {
+  "score": 0.9270085470085471,
+  "n": 78,
+  "overlaps": 0,
+  "coverage": 0.38,
+  "small": 64,
+  "stacked": 54,
+  "unique": 22,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 0.9401709401709402,
+  "c_orientation": 0.5333333333333333
+ },
+ "problems": 1,
+ "n": 78,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 2,
+  "orientation": 3,
+  "note": "vast empty grass field with only a thin scattered line of tiny stalls, nothing 'busy' or 'overflowing'"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4567521367521368,
+ "ms": 11513
+}

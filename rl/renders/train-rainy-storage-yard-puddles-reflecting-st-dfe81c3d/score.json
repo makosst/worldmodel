@@ -1,0 +1,33 @@
+{
+ "id": "train-rainy-storage-yard-puddles-reflecting-st-dfe81c3d",
+ "geo": 0.9476190476190478,
+ "geometry": {
+  "score": 0.9476190476190478,
+  "n": 61,
+  "overlaps": 0,
+  "coverage": 0.51,
+  "small": 32,
+  "stacked": 18,
+  "unique": 35,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.47619047619047616
+ },
+ "problems": 0,
+ "n": 61,
+ "judge": {
+  "prompt": 3,
+  "realism": 5,
+  "composition": 4,
+  "density": 7,
+  "orientation": 6,
+  "note": "no puddles, rain, or reflections at all"
+ },
+ "judgeScore": 0.5,
+ "reward": 0.611904761904762,
+ "ms": 37204
+}

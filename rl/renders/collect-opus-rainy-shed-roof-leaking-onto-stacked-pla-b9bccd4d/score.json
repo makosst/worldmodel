@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-shed-roof-leaking-onto-stacked-pla-b9bccd4d",
+ "geo": 0.9530303030303031,
+ "geometry": {
+  "score": 0.9530303030303031,
+  "n": 59,
+  "overlaps": 0,
+  "coverage": 0.35,
+  "small": 36,
+  "stacked": 22,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.7777777777777777,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8636363636363636
+ },
+ "problems": 1,
+ "n": 59,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 4,
+  "note": "no roof, no rain/leak, crates scattered not stacked"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4932575757575758,
+ "ms": 33162
+}

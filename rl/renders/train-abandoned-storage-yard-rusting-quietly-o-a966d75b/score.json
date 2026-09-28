@@ -1,0 +1,33 @@
+{
+ "id": "train-abandoned-storage-yard-rusting-quietly-o-a966d75b",
+ "geo": 0.9515441176470589,
+ "geometry": {
+  "score": 0.9515441176470589,
+  "n": 85,
+  "overlaps": 1,
+  "coverage": 0.6,
+  "small": 56,
+  "stacked": 29,
+  "unique": 34,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9764705882352941,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5625
+ },
+ "problems": 0,
+ "n": 85,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "no weeds/vegetation, crates not buried, bare dirt, random scatter not grouped rows"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5228860294117648,
+ "ms": 17706
+}

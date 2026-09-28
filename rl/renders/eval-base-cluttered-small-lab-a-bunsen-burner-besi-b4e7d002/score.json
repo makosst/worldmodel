@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-cluttered-small-lab-a-bunsen-burner-besi-b4e7d002",
+ "geo": 0.8419607843137256,
+ "geometry": {
+  "score": 0.8419607843137256,
+  "n": 64,
+  "overlaps": 0,
+  "coverage": 0.17,
+  "small": 50,
+  "stacked": 42,
+  "unique": 20,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.37777777777777777,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.35294117647058826
+ },
+ "problems": 0,
+ "n": 64,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "no walls/room enclosure, objects scattered on open pavement, no lab tables/chairs/enclosed space, doesn't read as an indoor lab"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.43549019607843137,
+ "ms": 7724
+}

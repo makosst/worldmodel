@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-sunny-cafe-patio-throw-pillows-scattered-ad28eca4",
+ "geo": 0.9693759071117563,
+ "geometry": {
+  "score": 0.9693759071117563,
+  "n": 53,
+  "overlaps": 1,
+  "coverage": 0.5,
+  "small": 28,
+  "stacked": 26,
+  "unique": 21,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 0.9622641509433962,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.7692307692307693
+ },
+ "problems": 1,
+ "n": 53,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 6,
+  "orientation": 3,
+  "note": "grass field not a patio, no wicker/cafe cues, chairs not facing tables"
+ },
+ "judgeScore": 0.38,
+ "reward": 0.5273439767779391,
+ "ms": 26379
+}

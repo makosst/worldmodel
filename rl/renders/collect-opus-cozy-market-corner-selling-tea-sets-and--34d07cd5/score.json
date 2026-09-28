@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-market-corner-selling-tea-sets-and--34d07cd5",
+ "geo": 0.9700000000000001,
+ "geometry": {
+  "score": 0.9700000000000001,
+  "n": 66,
+  "overlaps": 0,
+  "coverage": 0.4,
+  "small": 49,
+  "stacked": 37,
+  "unique": 24,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.888888888888889,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.8666666666666667
+ },
+ "problems": 1,
+ "n": 66,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 3,
+  "density": 2,
+  "orientation": 4,
+  "note": "sparse scattered furniture on bare grass, no stalls/dusk lighting, mostly empty ground"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.4675,
+ "ms": 16320
+}

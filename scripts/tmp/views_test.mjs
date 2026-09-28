@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import { World } from '../../server/world.js';
+import { freeViewpoints } from '../../server/views.js';
+import { capture } from '../../server/capture.js';
+import { loadWorld } from '../../server/store.js';
+const rec = loadWorld(process.argv[2]);
+const w = new World({});
+for (const o of rec.world.objects) w.objects.set(o.id, o);
+const views = freeViewpoints(w, 4);
+console.log(JSON.stringify(views));
+const imgs = await capture('http://127.0.0.1:5173', rec.world, views);
+imgs.forEach((im, i) => fs.writeFileSync(`/private/tmp/claude-501/-Users-makosst-dev-worldmodel/f306e6f6-7dbb-4e44-8808-427f30fca738/scratchpad/shots/eye_${i}.jpg`, Buffer.from(im.data, 'base64')));
+process.exit(0);

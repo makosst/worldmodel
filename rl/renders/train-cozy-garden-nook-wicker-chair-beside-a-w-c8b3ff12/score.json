@@ -1,0 +1,33 @@
+{
+ "id": "train-cozy-garden-nook-wicker-chair-beside-a-w-c8b3ff12",
+ "geo": 0.9193333333333336,
+ "geometry": {
+  "score": 0.9193333333333336,
+  "n": 65,
+  "overlaps": 0,
+  "coverage": 0.4,
+  "small": 50,
+  "stacked": 14,
+  "unique": 32,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.888888888888889,
+  "c_stacking": 0.56,
+  "c_variety": 1,
+  "c_orientation": 0.8
+ },
+ "problems": 0,
+ "n": 65,
+ "judge": {
+  "prompt": 3,
+  "realism": 3,
+  "composition": 2,
+  "density": 3,
+  "orientation": 2,
+  "note": "random furniture scatter, no flowers/periwinkle, no cozy grouping"
+ },
+ "judgeScore": 0.26,
+ "reward": 0.4248333333333334,
+ "ms": 11905
+}

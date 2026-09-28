@@ -1,0 +1,33 @@
+{
+ "id": "train-overgrown-abandoned-garden-nettles-creep-b7ab5edc",
+ "geo": 0.9058413078149922,
+ "geometry": {
+  "score": 0.9058413078149922,
+  "n": 86,
+  "overlaps": 0,
+  "coverage": 0.49,
+  "small": 66,
+  "stacked": 10,
+  "unique": 36,
+  "c_density": 1,
+  "c_validity": 0.9772727272727273,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 0.30303030303030304,
+  "c_variety": 1,
+  "c_orientation": 0.7894736842105263
+ },
+ "problems": 2,
+ "n": 86,
+ "judge": {
+  "prompt": 5,
+  "realism": 3,
+  "composition": 3,
+  "density": 4,
+  "orientation": 3,
+  "note": "no cracked pot/nettles distinct, generic pots scattered with no vegetation overgrowth or focal grouping"
+ },
+ "judgeScore": 0.36,
+ "reward": 0.4964603269537481,
+ "ms": 7811
+}

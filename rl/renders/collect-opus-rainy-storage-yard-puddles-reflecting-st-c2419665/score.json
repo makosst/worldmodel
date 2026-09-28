@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-storage-yard-puddles-reflecting-st-c2419665",
+ "geo": 0.9746376811594204,
+ "geometry": {
+  "score": 0.9746376811594204,
+  "n": 68,
+  "overlaps": 0,
+  "coverage": 0.4,
+  "small": 37,
+  "stacked": 24,
+  "unique": 36,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.888888888888889,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.9130434782608695
+ },
+ "problems": 1,
+ "n": 68,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 5,
+  "orientation": 4,
+  "note": "no puddles/rain/reflections; ground is plain grass, not wet pavement"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4986594202898551,
+ "ms": 37657
+}

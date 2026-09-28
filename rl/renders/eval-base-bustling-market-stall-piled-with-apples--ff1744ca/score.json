@@ -1,0 +1,33 @@
+{
+ "id": "eval-base-bustling-market-stall-piled-with-apples--ff1744ca",
+ "geo": 0.9473684210526317,
+ "geometry": {
+  "score": 0.9473684210526317,
+  "n": 84,
+  "overlaps": 0,
+  "coverage": 0.52,
+  "small": 46,
+  "stacked": 35,
+  "unique": 33,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.47368421052631576
+ },
+ "problems": 0,
+ "n": 84,
+ "judge": {
+  "prompt": 4,
+  "realism": 3,
+  "composition": 3,
+  "density": 3,
+  "orientation": 3,
+  "note": "no stall/awning structure, just scattered crates on bare ground with odd industrial fence walls, no crowd or bustle"
+ },
+ "judgeScore": 0.32,
+ "reward": 0.47684210526315796,
+ "ms": 15557
+}

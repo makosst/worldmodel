@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-rainy-cafe-scene-a-round-table-and-ceram-d42b260e",
+ "geo": 0.9562500000000002,
+ "geometry": {
+  "score": 0.9562500000000002,
+  "n": 75,
+  "overlaps": 0,
+  "coverage": 0.58,
+  "small": 53,
+  "stacked": 37,
+  "unique": 25,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5625
+ },
+ "problems": 1,
+ "n": 75,
+ "judge": {
+  "prompt": 5,
+  "realism": 2,
+  "composition": 2,
+  "density": 4,
+  "orientation": 2,
+  "note": "scattered furniture on bare grass, floating door, chairs not facing tables, no real cafe patio structure"
+ },
+ "judgeScore": 0.3,
+ "reward": 0.46406250000000004,
+ "ms": 37860
+}

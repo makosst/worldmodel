@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-narrow-alley-at-night-trash-cans-overflo-a0b70cb8",
+ "geo": 0.9104761904761905,
+ "geometry": {
+  "score": 0.9104761904761905,
+  "n": 63,
+  "overlaps": 0,
+  "coverage": 0.31,
+  "small": 22,
+  "stacked": 11,
+  "unique": 31,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.6888888888888889,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.5714285714285714
+ },
+ "problems": 1,
+ "n": 63,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 2,
+  "density": 2,
+  "orientation": 2,
+  "note": "empty grass field with props scattered along edges, no walls forming an actual alley corridor, trash cans not overflowing, camera not visible"
+ },
+ "judgeScore": 0.24,
+ "reward": 0.40761904761904766,
+ "ms": 26723
+}

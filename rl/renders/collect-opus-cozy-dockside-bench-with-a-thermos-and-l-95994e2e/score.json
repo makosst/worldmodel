@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-cozy-dockside-bench-with-a-thermos-and-l-95994e2e",
+ "geo": 0.9666666666666668,
+ "geometry": {
+  "score": 0.9666666666666668,
+  "n": 54,
+  "overlaps": 0,
+  "coverage": 0.68,
+  "small": 18,
+  "stacked": 18,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 1,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 0.6666666666666666
+ },
+ "problems": 1,
+ "n": 54,
+ "judge": {
+  "prompt": 3,
+  "realism": 2,
+  "composition": 3,
+  "density": 5,
+  "orientation": 4,
+  "note": "no dock/water/rail; giant buoy, recliner & freezer break coherence"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4966666666666667,
+ "ms": 18510
+}

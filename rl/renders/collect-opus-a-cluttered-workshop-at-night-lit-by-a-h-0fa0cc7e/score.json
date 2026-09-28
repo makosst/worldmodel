@@ -1,0 +1,33 @@
+{
+ "id": "collect-opus-a-cluttered-workshop-at-night-lit-by-a-h-0fa0cc7e",
+ "geo": 0.9766666666666668,
+ "geometry": {
+  "score": 0.9766666666666668,
+  "n": 82,
+  "overlaps": 0,
+  "coverage": 0.38,
+  "small": 39,
+  "stacked": 30,
+  "unique": 27,
+  "c_density": 1,
+  "c_validity": 1,
+  "c_overlap": 1,
+  "c_coverage": 0.8444444444444444,
+  "c_stacking": 1,
+  "c_variety": 1,
+  "c_orientation": 1
+ },
+ "problems": 1,
+ "n": 82,
+ "judge": {
+  "prompt": 4,
+  "realism": 2,
+  "composition": 4,
+  "density": 4,
+  "orientation": 3,
+  "note": "floating lamps/objects, bright daylight sky instead of enclosed night workshop"
+ },
+ "judgeScore": 0.34,
+ "reward": 0.4991666666666667,
+ "ms": 45340
+}
